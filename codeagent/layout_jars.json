@@ -1,0 +1,17 @@
+{
+ "reusable_assets": [
+  {
+   "logical_name": "jar",
+   "mesh": "/home/ziga/projects/yam-arcade/assets/sam3d/jar/collision_hollow.obj",
+   "file_meshes_are_zup": true,
+   "simulation_role": "visual and proportion reference for a glass jam jar (no threads; build threaded geometry procedurally)",
+   "visual": "/home/ziga/projects/yam-arcade/assets/sam3d/jar/visual_lo.obj",
+   "bbox": [
+    0.0719,
+    0.0719,
+    0.1
+   ]
+  }
+ ],
+ "notes": "Meshes from SAM 3D (see ~/projects/yam-arcade/assets/sam3d/INDEX.md). Z-up, metres, base at z = 0."
+}

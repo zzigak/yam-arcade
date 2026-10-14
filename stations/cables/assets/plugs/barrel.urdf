@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="barrel">
+  <link name="barrel">
+    <visual><geometry><mesh filename="barrel_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="barrel_hull.obj"/></geometry></collision>
+  </link>
+</robot>

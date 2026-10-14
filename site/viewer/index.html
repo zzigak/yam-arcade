@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YAM Arcade viewer</title>
+<meta name="description" content="Replays the YAM arcade station simulation exports in 3D, synced from out/ every two minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="viewer.css">
+<script type="importmap">
+{"imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+<canvas id="c" aria-label="3D view of the simulation"></canvas>
+
+<header class="bar top">
+  <a class="home" href="../" title="Back to the YAM Arcade page">YAM Arcade</a>
+  <div class="seg" role="group" aria-label="View">
+    <button type="button" data-mode="room" aria-pressed="true">Room</button>
+    <button type="button" data-mode="run" aria-pressed="false">Run</button>
+  </div>
+  <button type="button" class="pill" id="runsBtn" aria-expanded="false" aria-controls="runs">Runs</button>
+  <div class="title" id="title"></div>
+  <button type="button" class="pill hidden" id="reloadBtn" title="New simulation data arrived">New data, reload</button>
+</header>
+
+<aside id="runs" class="sheet" hidden>
+  <div class="sheet-head">
+    <span>Runs</span>
+    <span class="muted" id="syncAge"></span>
+    <button type="button" class="x" id="runsClose" aria-label="Close">&times;</button>
+  </div>
+  <div id="runList"></div>
+</aside>
+
+<nav class="cams" id="cams" aria-label="Camera"></nav>
+
+<div id="info" class="info hidden"></div>
+<div id="event" class="event hidden"></div>
+<div id="pick" class="pick hidden"></div>
+
+<div id="loading" class="loading">
+  <div class="track"><div class="fill" id="loadFill"></div></div>
+  <span id="loadText">Loading</span>
+</div>
+
+<footer class="bar timeline">
+  <button type="button" class="play" id="playBtn" aria-label="Pause">&#10074;&#10074;</button>
+  <input type="range" id="scrub" min="0" max="1000" value="0" step="1" aria-label="Time">
+  <span class="clock" id="clock">0.0 s</span>
+  <select id="speed" aria-label="Speed">
+    <option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="1" selected>1x</option>
+    <option value="2">2x</option><option value="4">4x</option>
+  </select>
+  <button type="button" class="pill small" id="loopBtn" aria-pressed="true" title="Loop">Loop</button>
+</footer>
+
+<script type="module" src="viewer.js"></script>
+</body>
+</html>

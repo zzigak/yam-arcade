@@ -1,0 +1,30 @@
+[38;5;226m[Genesis] [12:38:24] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [12:38:24] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [12:38:24] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [12:38:24] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [12:38:24] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [12:38:24] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+CUDA Backend Kernel Console Init Success!
+FAILED at step 210 descend qpos [0.0, 0.0, -0.0, -0.18410000205039978, 1.7522000074386597, 1.1996999979019165, -1.0119999647140503, -0.0, -0.18410000205039978, 0.04749999940395355, 0.04749999940395355, 0.251800000667572, 1.2800999879837036, 1.3955999612808228, -1.6863000392913818, 0.0, 0.251800000667572, 0.04749999940395355, 0.04749999940395355]
+last log [{'t': 2.04, 'phase': 'descend', 'cube': [-0.25, -0.10000000149011612, -9.712600442276636e+24], 'tcp': [-0.24804, -0.08947, 0.80332], 'width': 0.096, 'finger_force': [0.003000000026077032, -0.003000000026077032], 'robot_zmin': 0.75}, {'t': 2.07, 'phase': 'descend', 'cube': [-0.25, -0.10000000149011612, 9.712598890831672e+30], 'tcp': [-0.2482, -0.09036, 0.79601], 'width': 0.096, 'finger_force': [0.003000000026077032, -0.0020000000949949026], 'robot_zmin': 0.75}, {'t': 2.1, 'phase': 'descend', 'cube': [-0.25, -0.10000000149011612, 0.7709599733352661], 'tcp': [-0.24833, -0.09103, 0.79141], 'width': 0.096, 'finger_force': [0.0020000000949949026, -0.0010000000474974513], 'robot_zmin': 0.75}]
+Traceback (most recent call last):
+  File "/home/ziga/projects/yam-arcade/robots/test_grasp.py", line 109, in <module>
+    move((cx, cy, TCP_GRASP_Z), 1.0, "descend")
+  File "/home/ziga/projects/yam-arcade/robots/test_grasp.py", line 101, in move
+    step(phase)
+  File "/home/ziga/projects/yam-arcade/robots/test_grasp.py", line 79, in step
+    scene.step()
+  File "/home/ziga/simquarry/genesis-world/genesis/utils/misc.py", line 145, in wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ziga/simquarry/genesis-world/genesis/engine/scene.py", line 1098, in step
+    self._sim.step()
+  File "/home/ziga/simquarry/genesis-world/genesis/engine/simulator.py", line 278, in step
+    self.rigid_solver.check_errno()
+  File "/home/ziga/simquarry/genesis-world/genesis/engine/solvers/rigid/rigid_solver.py", line 1317, in check_errno
+    gs.raise_exception("Invalid constraint forces causing 'nan'. Please decrease Rigid simulation timestep.")
+  File "/home/ziga/simquarry/genesis-world/genesis/utils/misc.py", line 38, in raise_exception
+    raise gs.GenesisException(msg)
+genesis.GenesisException: Invalid constraint forces causing 'nan'. Please decrease Rigid simulation timestep.
+
+[38;5;9m[Genesis] [12:38:45] [ERROR] GenesisException: Invalid constraint forces causing 'nan'. Please decrease Rigid simulation timestep.[0m

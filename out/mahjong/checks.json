@@ -1,0 +1,824 @@
+{
+ "station": "mahjong",
+ "checks": {
+  "settle_drift_1s_to_6s_mm": {
+   "value": 4.311327295900167e-07,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "settle_rotation_1s_to_6s_deg": {
+   "value": 1.7075472925031877e-06,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "settle_max_speed_last_1s_mm_s": {
+   "value": 8.622965960232308e-08,
+   "limit": "<= 0.1",
+   "ok": true
+  },
+  "settle_total_motion_mm": {
+   "value": 0.23587451763262599,
+   "limit": "<= 0.3 (0.1 mm spawn gap, 0.2 for stacks)",
+   "ok": true
+  },
+  "settle_solver_penetration_first_1s_mm": {
+   "value": 0.026242983945050223,
+   "limit": "<= 0.1 (landing from the spawn gap)",
+   "ok": true
+  },
+  "settle_rest_height_error_mm": {
+   "value": 0.034500411467464076,
+   "limit": "<= 0.1 (on table / on the tile below)",
+   "ok": true
+  },
+  "settle_solver_penetration_mm": {
+   "value": 0.014796532232541106,
+   "limit": "<= 0.05 (t >= 1 s)",
+   "ok": true
+  },
+  "settle_box_overlap_tile-tile_mm": {
+   "value": 0.0081,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "settle_box_overlap_tile-table_mm": {
+   "value": 0.0296,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "settle_box_overlap_tile-rack_mm": {
+   "value": -61.8224,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "settle_box_overlap_rack-table_mm": {
+   "value": 0.0141,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "scattered_success_is_false": {
+   "value": false,
+   "limit": "False (nothing in the rack yet)",
+   "ok": true
+  },
+  "solved_success": {
+   "value": true,
+   "limit": "True (all 14 tiles seated in order)",
+   "ok": true
+  },
+  "solved_n_correct": {
+   "value": 14,
+   "limit": "== 14",
+   "ok": true
+  },
+  "solved_drift_1s_to_6s_mm": {
+   "value": 0.0010825312295026212,
+   "limit": "<= 0.05 (tiles leaning in the rack do not creep)",
+   "ok": true
+  },
+  "solved_rack_drift_mm": {
+   "value": 5.043443750759784e-10,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_max_speed_last_1s_mm_s": {
+   "value": 0.00021650627827878515,
+   "limit": "<= 0.1",
+   "ok": true
+  },
+  "solved_solver_penetration_mm": {
+   "value": 0.017178918863052124,
+   "limit": "<= 0.05 (t >= 1 s)",
+   "ok": true
+  },
+  "solved_solver_penetration_first_1s_mm": {
+   "value": 0.051632724778224226,
+   "limit": "<= 0.1 (landing from the spawn gap)",
+   "ok": true
+  },
+  "solved_box_overlap_tile-tile_mm": {
+   "value": -10.0,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_box_overlap_tile-table_mm": {
+   "value": -12.9582,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_box_overlap_tile-rack_mm": {
+   "value": 0.0206,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_box_overlap_rack-table_mm": {
+   "value": 0.0344,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "demo_tile_07_2m_in_slot_1": {
+   "value": true,
+   "limit": "seated (<= 5 mm along, <= 4 mm in profile), upright & facing robot (<= 10 deg), at rest, right slot",
+   "ok": true
+  },
+  "demo_tile_11_6p_in_slot_5": {
+   "value": true,
+   "limit": "seated (<= 5 mm along, <= 4 mm in profile), upright & facing robot (<= 10 deg), at rest, right slot",
+   "ok": true
+  },
+  "demo_tile_01_7z_in_slot_12": {
+   "value": true,
+   "limit": "seated (<= 5 mm along, <= 4 mm in profile), upright & facing robot (<= 10 deg), at rest, right slot",
+   "ok": true
+  },
+  "demo_n_correct_slots": {
+   "value": 3,
+   "limit": "== 3",
+   "ok": true
+  },
+  "demo_in_hand_slip_mm": {
+   "value": 0.5827880660941961,
+   "limit": "<= 5 (tile pose in the gripper, lift -> 8 mm above the seat)",
+   "ok": true
+  },
+  "demo_untouched_tiles_moved_mm": {
+   "value": 0.013705512331887854,
+   "limit": "<= 0.3 (spawn drop only)",
+   "ok": true
+  },
+  "demo_rack_moved_mm": {
+   "value": 0.004027838810324194,
+   "limit": "<= 1.0",
+   "ok": true
+  },
+  "demo_object_penetration_mm": {
+   "value": 0.08925859626938765,
+   "limit": "<= 0.1 (tile/rack/table contacts, every step)",
+   "ok": true
+  },
+  "demo_finger_penetration_mm": {
+   "value": 0.30460108795191004,
+   "limit": "<= 1.0 (pads squeezing at 6 N, every step)",
+   "ok": true
+  },
+  "demo_robot_touches_only_its_tiles": {
+   "value": {},
+   "limit": "{} (no robot contact with table, rack, other tiles)",
+   "ok": true
+  },
+  "demo_end_box_overlap_tile-tile_mm": {
+   "value": 0.0076,
+   "limit": "<= 0.05 (< 0 = gap)",
+   "ok": true
+  },
+  "demo_end_box_overlap_tile-table_mm": {
+   "value": 0.0287,
+   "limit": "<= 0.05 (< 0 = gap)",
+   "ok": true
+  },
+  "demo_end_box_overlap_tile-rack_mm": {
+   "value": 0.0206,
+   "limit": "<= 0.05 (< 0 = gap)",
+   "ok": true
+  },
+  "demo_end_box_overlap_rack-table_mm": {
+   "value": 0.0187,
+   "limit": "<= 0.05 (< 0 = gap)",
+   "ok": true
+  },
+  "export_mesh_frame_error_mm": {
+   "value": 1.1102230246251565e-13,
+   "limit": "<= 0.01 (Genesis visual vertices mapped by the recorded pose vs the exported OBJ bounds, rack + 14 tiles)",
+   "ok": true
+  }
+ },
+ "info": {
+  "validate": {
+   "scattered": {
+    "layout": "scattered",
+    "drift_mm": 4.311327295900167e-07,
+    "rot_deg": 1.7075472925031877e-06,
+    "rack_drift_mm": 3.4694469519536465e-11,
+    "vmax_last1s_mm_s": 8.622965960232308e-08,
+    "pen_max_mm": 0.014796532232541106,
+    "pen_first_1s_mm": 0.026242983945050223,
+    "disp_total_max_mm": 0.23587451763262599,
+    "overlaps_mm": {
+     "tile-tile": 0.0081,
+     "tile-table": 0.0296,
+     "tile-rack": -61.8224,
+     "rack-table": 0.0141
+    },
+    "overlap_worst_pairs": {
+     "rack-table": [
+      "table",
+      "rack"
+     ],
+     "tile-table": [
+      "table",
+      "tile_10_3m"
+     ],
+     "tile-rack": [
+      "rack",
+      "tile_08_7z"
+     ],
+     "tile-tile": [
+      "tile_10_3m",
+      "tile_11_6p"
+     ]
+    },
+    "success": false,
+    "n_correct": 0,
+    "slots": [
+     {
+      "slot": 0,
+      "want": "1m",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 1,
+      "want": "2m",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 2,
+      "want": "3m",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 3,
+      "want": "4p",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 4,
+      "want": "5p",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 5,
+      "want": "6p",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 6,
+      "want": "7s",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 7,
+      "want": "8s",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 8,
+      "want": "9s",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 9,
+      "want": "1z",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 10,
+      "want": "1z",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 11,
+      "want": "1z",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 12,
+      "want": "7z",
+      "have": [],
+      "ok": false
+     },
+     {
+      "slot": 13,
+      "want": "7z",
+      "have": [],
+      "ok": false
+     }
+    ],
+    "tile_z": [
+     0.760486337931997,
+     0.760486337931997,
+     0.760486337931997,
+     0.7604726805429782,
+     0.7814657322904598,
+     0.760486337931997,
+     0.760486337931997,
+     0.760486337931997,
+     0.760486337931997,
+     0.760486337931997,
+     0.7604726805612916,
+     0.7814654995885325,
+     0.760486337931997,
+     0.760486337931997
+    ],
+    "tile_names": [
+     "tile_00_4p",
+     "tile_01_7z",
+     "tile_02_9s",
+     "tile_03_7s",
+     "tile_04_8s",
+     "tile_05_1m",
+     "tile_06_5p",
+     "tile_07_2m",
+     "tile_08_7z",
+     "tile_09_1z",
+     "tile_10_3m",
+     "tile_11_6p",
+     "tile_12_1z",
+     "tile_13_1z"
+    ],
+    "tile_notes": [
+     "face up",
+     "face down",
+     "face up",
+     "face up",
+     "stacked, face down",
+     "face down",
+     "face up",
+     "face up",
+     "face up",
+     "face down",
+     "face up",
+     "stacked, face up",
+     "face down",
+     "face up"
+    ]
+   },
+   "wall_scattered_s": 6.631683588027954
+  },
+  "solved": {
+   "solved": {
+    "layout": "solved",
+    "drift_mm": 0.0010825312295026212,
+    "rot_deg": 0.0,
+    "rack_drift_mm": 5.043443750759784e-10,
+    "vmax_last1s_mm_s": 0.00021650627827878515,
+    "pen_max_mm": 0.017178918863052124,
+    "pen_first_1s_mm": 0.051632724778224226,
+    "disp_total_max_mm": 0.17419293935156602,
+    "overlaps_mm": {
+     "tile-tile": -10.0,
+     "tile-table": -12.9582,
+     "tile-rack": 0.0206,
+     "rack-table": 0.0344
+    },
+    "overlap_worst_pairs": {
+     "rack-table": [
+      "table",
+      "rack"
+     ],
+     "tile-table": [
+      "table",
+      "tile_00_1m"
+     ],
+     "tile-rack": [
+      "rack",
+      "tile_13_7z"
+     ],
+     "tile-tile": [
+      "tile_02_3m",
+      "tile_03_4p"
+     ]
+    },
+    "success": true,
+    "n_correct": 14,
+    "slots": [
+     {
+      "slot": 0,
+      "want": "1m",
+      "have": [
+       "1m"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 1,
+      "want": "2m",
+      "have": [
+       "2m"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 2,
+      "want": "3m",
+      "have": [
+       "3m"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 3,
+      "want": "4p",
+      "have": [
+       "4p"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 4,
+      "want": "5p",
+      "have": [
+       "5p"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 5,
+      "want": "6p",
+      "have": [
+       "6p"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 6,
+      "want": "7s",
+      "have": [
+       "7s"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 7,
+      "want": "8s",
+      "have": [
+       "8s"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 8,
+      "want": "9s",
+      "have": [
+       "9s"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 9,
+      "want": "1z",
+      "have": [
+       "1z"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 10,
+      "want": "1z",
+      "have": [
+       "1z"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 11,
+      "want": "1z",
+      "have": [
+       "1z"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 12,
+      "want": "7z",
+      "have": [
+       "7z"
+      ],
+      "ok": true
+     },
+     {
+      "slot": 13,
+      "want": "7z",
+      "have": [
+       "7z"
+      ],
+      "ok": true
+     }
+    ],
+    "tile_z": [
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906,
+     0.7825834238043906
+    ],
+    "tile_names": [
+     "tile_00_1m",
+     "tile_01_2m",
+     "tile_02_3m",
+     "tile_03_4p",
+     "tile_04_5p",
+     "tile_05_6p",
+     "tile_06_7s",
+     "tile_07_8s",
+     "tile_08_9s",
+     "tile_09_1z",
+     "tile_10_1z",
+     "tile_11_1z",
+     "tile_12_7z",
+     "tile_13_7z"
+    ],
+    "tile_notes": [
+     "slot 0",
+     "slot 1",
+     "slot 2",
+     "slot 3",
+     "slot 4",
+     "slot 5",
+     "slot 6",
+     "slot 7",
+     "slot 8",
+     "slot 9",
+     "slot 10",
+     "slot 11",
+     "slot 12",
+     "slot 13"
+    ]
+   }
+  },
+  "demo": {
+   "results": [
+    {
+     "mode": "rack",
+     "arms": "left",
+     "tile": "tile_07_2m",
+     "kind": "2m",
+     "start": "face up",
+     "slot": 1,
+     "error": null,
+     "seated": true,
+     "upright": true,
+     "facing": true,
+     "at_rest": true,
+     "correct": true,
+     "dx_mm": 0.00224804580911675,
+     "dbu_mm": 0.10657572926292849,
+     "up_err_deg": 0.0353636888656304,
+     "face_err_deg": 0.03666490741807511,
+     "target_slot": 1
+    },
+    {
+     "mode": "rack",
+     "arms": "right",
+     "tile": "tile_11_6p",
+     "kind": "6p",
+     "start": "stacked, face up",
+     "slot": 5,
+     "error": null,
+     "seated": true,
+     "upright": true,
+     "facing": true,
+     "at_rest": true,
+     "correct": true,
+     "dx_mm": 0.005011735688106866,
+     "dbu_mm": 0.115269141025568,
+     "up_err_deg": 0.03536368791746131,
+     "face_err_deg": 0.0405232475903444,
+     "target_slot": 5
+    },
+    {
+     "mode": "flip",
+     "arms": "left (stand up) + right (rack)",
+     "tile": "tile_01_7z",
+     "kind": "7z",
+     "start": "face down",
+     "slot": 12,
+     "error": null,
+     "seated": true,
+     "upright": true,
+     "facing": true,
+     "at_rest": true,
+     "correct": true,
+     "dx_mm": 0.012233029818148333,
+     "dbu_mm": 0.162683908450098,
+     "up_err_deg": 0.0353636891542036,
+     "face_err_deg": 0.035429358744277016,
+     "target_slot": 12
+    }
+   ],
+   "in_hand_slip_mm": {
+    "tile_07_2m": 0.5827880660941961,
+    "tile_11_6p": 0.5524204119215114,
+    "tile_01_7z": 0.23527786096401238
+   },
+   "moved_mm": {
+    "tile_00_4p": 0.0,
+    "tile_01_7z": 635.7863793244034,
+    "tile_02_9s": 0.0,
+    "tile_03_7s": 1.564193219394383e-09,
+    "tile_04_8s": 2.3690500691495504e-06,
+    "tile_05_1m": 0.0,
+    "tile_06_5p": 0.0,
+    "tile_07_2m": 298.4013054793,
+    "tile_08_7z": 0.0,
+    "tile_09_1z": 0.0,
+    "tile_10_3m": 0.013705512331887854,
+    "tile_11_6p": 342.01522604526997,
+    "tile_12_1z": 0.0,
+    "tile_13_1z": 0.0
+   },
+   "penetration_by_pair_mm": {
+    "rack-table": 0.022205440821583197,
+    "table-tile": 0.042732862256821685,
+    "tile-tile": 0.026242983945050227,
+    "robot-tile": 0.30460108795191004,
+    "rack-tile": 0.08925859626938765
+   },
+   "robot_contact_steps": {
+    "tile_07_2m": 29483,
+    "tile_11_6p": 29474,
+    "tile_01_7z": 71875
+   },
+   "frames": 1709,
+   "sim_time_s": 56.95600000002364,
+   "wall_s": 177.68729424476624,
+   "events": [
+    {
+     "t": 0.6,
+     "msg": "left: pick tile_07_2m (heading -43 deg) for slot 1",
+     "pick": [
+      0.016,
+      -0.1197,
+      0.754
+     ]
+    },
+    {
+     "t": 3.778,
+     "msg": "left: grasp ok",
+     "width_mm": 25.4
+    },
+    {
+     "t": 4.978,
+     "msg": "left: transport tile_07_2m to slot 1",
+     "tcp_goal": [
+      -0.198,
+      0.0946,
+      0.7872
+     ]
+    },
+    {
+     "t": 9.528,
+     "msg": "left: tile error 8 mm above the seat",
+     "err_mm": [
+      0.03,
+      -0.46,
+      0.11
+     ],
+     "in_hand_slip_mm": 0.58
+    },
+    {
+     "t": 11.428,
+     "msg": "left: released tile_07_2m"
+    },
+    {
+     "t": 14.028,
+     "msg": "right: pick tile_11_6p (heading 10 deg) for slot 5",
+     "pick": [
+      0.2341,
+      -0.0899,
+      0.775
+     ]
+    },
+    {
+     "t": 17.204,
+     "msg": "right: grasp ok",
+     "width_mm": 25.7
+    },
+    {
+     "t": 18.404,
+     "msg": "right: transport tile_11_6p to slot 5",
+     "tcp_goal": [
+      -0.054,
+      0.0945,
+      0.7872
+     ]
+    },
+    {
+     "t": 22.954,
+     "msg": "right: tile error 8 mm above the seat",
+     "err_mm": [
+      -0.07,
+      -0.45,
+      0.09
+     ],
+     "in_hand_slip_mm": 0.55
+    },
+    {
+     "t": 24.854,
+     "msg": "right: released tile_11_6p"
+    },
+    {
+     "t": 27.454,
+     "msg": "left: pick face-down tile_01_7z (heading 3 deg) to stand it up",
+     "pick": [
+      -0.365,
+      -0.205,
+      0.7565
+     ]
+    },
+    {
+     "t": 30.83,
+     "msg": "left: grasp ok",
+     "width_mm": 25.6
+    },
+    {
+     "t": 32.03,
+     "msg": "left: turn tile_01_7z upright",
+     "tcp_goal": [
+      0.0039,
+      -0.1999,
+      0.7707
+     ]
+    },
+    {
+     "t": 36.33,
+     "msg": "left: tile error 8 mm above the table",
+     "err_mm": [
+      -0.36,
+      -0.01,
+      -0.09
+     ]
+    },
+    {
+     "t": 38.13,
+     "msg": "left: released tile_01_7z standing"
+    },
+    {
+     "t": 41.23,
+     "msg": "right: grip standing tile_01_7z from its face side",
+     "grasp": [
+      -0.0065,
+      -0.2,
+      0.7735
+     ],
+     "approach": [
+      -0.868,
+      -0.001,
+      -0.497
+     ]
+    },
+    {
+     "t": 44.806,
+     "msg": "right: grasp ok",
+     "width_mm": 25.7
+    },
+    {
+     "t": 46.006,
+     "msg": "right: transport tile_01_7z to slot 12",
+     "tcp_goal": [
+      0.1981,
+      0.0946,
+      0.7873
+     ]
+    },
+    {
+     "t": 50.956,
+     "msg": "right: tile error 8 mm above the seat",
+     "err_mm": [
+      -0.03,
+      -0.08,
+      0.26
+     ],
+     "in_hand_slip_mm": 0.24
+    },
+    {
+     "t": 52.856,
+     "msg": "right: released tile_01_7z"
+    }
+   ]
+  }
+ },
+ "all_ok": true,
+ "n_checks": 38,
+ "n_failed": 0
+}

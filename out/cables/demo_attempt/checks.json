@@ -1,0 +1,360 @@
+{
+ "all_pass": false,
+ "checks": {
+  "segment_stretch": {
+   "value": [
+    0.9996026820212803,
+    1.0012616132381924
+   ],
+   "limit": [
+    0.9,
+    1.1
+   ],
+   "pass_": true,
+   "note": "min/max segment length / rest, all cables, every sim step"
+  },
+  "no_cable_interpenetration_mm": {
+   "value": {
+    "between_cables": 0.5028286751390301,
+    "within_a_cable": 0.9059246642592281
+   },
+   "limit": -0.5,
+   "pass_": true,
+   "note": "min surface gap over all recorded frames (negative = overlap); IPC keeps it >= 0, al-ipc may dip"
+  },
+  "no_nan": {
+   "value": true,
+   "limit": true,
+   "pass_": true
+  },
+  "below_table_mm": {
+   "value": 0.8104186058044434,
+   "limit": -0.5,
+   "pass_": true,
+   "note": "min over frames and cables of (lowest centreline z - table top - radius)"
+  },
+  "cables_on_table": {
+   "value": 0.0,
+   "limit": 0.0,
+   "pass_": true,
+   "note": "max overhang past the table edge, mm (<= 0: on the table)"
+  },
+  "pile_not_in_bins": {
+   "value": [],
+   "limit": [],
+   "pass_": true,
+   "note": "cables with any vertex inside a bin after the drop"
+  },
+  "settled_vmax": {
+   "value": 0.0035121803403098035,
+   "limit": 0.02,
+   "pass_": true,
+   "note": "m/s, last 5 frames of the settle"
+  },
+  "settled_ke": {
+   "value": 1.0758783292513616e-07,
+   "limit": 2e-05,
+   "pass_": true,
+   "note": "J, last 5 frames of the settle"
+  },
+  "rest_shape_retention": {
+   "value": {
+    "power_coil": 0.967,
+    "hdmi_ubend": 0.958,
+    "ext_coil": 0.967,
+    "cat6_scurve": 0.884,
+    "barrel_arc": 0.914,
+    "usbc_wave": 0.683,
+    "micro_scurve": 0.787,
+    "aux_loop": 0.801
+   },
+   "limit": 0.5,
+   "pass_": true,
+   "note": "per cable 1 - RMSD(settled, rest)/RMSD(straight, rest), best rigid alignment; 1 = rest shape, 0 = straight"
+  },
+  "pile_curvature_kept": {
+   "value": {
+    "power_coil": 1.0,
+    "hdmi_ubend": 1.017,
+    "ext_coil": 1.011,
+    "cat6_scurve": 1.029,
+    "barrel_arc": 1.138,
+    "usbc_wave": 0.954,
+    "micro_scurve": 1.052,
+    "aux_loop": 1.341
+   },
+   "limit": 0.75,
+   "pass_": true,
+   "note": "per cable sum |turning angle| in the pile / rest: none straightened. One-sided: the softest leads drape over thicker cables and pick up extra curvature (loading, not loss of shape); the two-sided test is rest_shape_isolated"
+  },
+  "rest_shape_isolated": {
+   "value": {
+    "power_coil": {
+     "retention": 0.9686,
+     "curvature": 0.9982,
+     "rmsd_mm": 7.75,
+     "drift_last_s_mm": 0.162
+    },
+    "hdmi_ubend": {
+     "retention": 1.0,
+     "curvature": 1.0,
+     "rmsd_mm": 0.0,
+     "drift_last_s_mm": 0.0
+    },
+    "ext_coil": {
+     "retention": 0.9762,
+     "curvature": 0.9991,
+     "rmsd_mm": 5.73,
+     "drift_last_s_mm": 0.118
+    },
+    "cat6_scurve": {
+     "retention": 1.0,
+     "curvature": 1.0,
+     "rmsd_mm": 0.0,
+     "drift_last_s_mm": -0.0
+    },
+    "barrel_arc": {
+     "retention": 1.0,
+     "curvature": 1.0,
+     "rmsd_mm": 0.0,
+     "drift_last_s_mm": 0.0
+    },
+    "usbc_wave": {
+     "retention": 1.0,
+     "curvature": 1.0,
+     "rmsd_mm": 0.0,
+     "drift_last_s_mm": 0.0
+    },
+    "micro_scurve": {
+     "retention": 1.0,
+     "curvature": 1.0,
+     "rmsd_mm": 0.0,
+     "drift_last_s_mm": 0.0
+    },
+    "aux_loop": {
+     "retention": 0.9791,
+     "curvature": 1.0035,
+     "rmsd_mm": 2.46,
+     "drift_last_s_mm": 0.048
+    }
+   },
+   "limit": {
+    "retention": 0.9,
+    "curvature": [
+     0.9,
+     1.1
+    ],
+    "drift_last_s_mm": 0.5
+   },
+   "pass_": true,
+   "note": "each cable dropped 3 cm alone onto the floor, 4 s (tests/rest_shape_test.py)"
+  },
+  "rest_shape_control_plain_rod": {
+   "value": {
+    "hdmi_ubend_KRB_only": {
+     "retention": 0.067,
+     "curvature": 0.14
+    },
+    "power_coil_KRB_only": {
+     "retention": 0.052,
+     "curvature": 0.075
+    }
+   },
+   "limit": "reported",
+   "pass_": true,
+   "note": "same cables as plain Genesis FEM.Rod (libuipc KRB, straight rest shape): they straighten"
+  },
+  "tangle_crossings": {
+   "value": 74,
+   "limit": "> 0",
+   "pass_": true,
+   "note": "top-view crossings between different cables"
+  },
+  "tangle_contacts": {
+   "value": {
+    "segment_pairs": 131,
+    "cable_pairs": 20
+   },
+   "limit": "> 0",
+   "pass_": true,
+   "note": "segment pairs of different cables within 2 mm"
+  },
+  "tangle_interlocked": {
+   "value": {
+    "pairs": [
+     "power_coil|cat6_scurve",
+     "cat6_scurve|aux_loop",
+     "micro_scurve|aux_loop"
+    ],
+    "woven": [
+     "power_coil",
+     "hdmi_ubend",
+     "ext_coil",
+     "cat6_scurve",
+     "barrel_arc",
+     "micro_scurve",
+     "aux_loop"
+    ]
+   },
+   "limit": "reported",
+   "pass_": true,
+   "note": "pairs crossing both over and under each other; cables lying over one cable and under another"
+  },
+  "no_frozen_cable": {
+   "value": 0,
+   "limit": 10,
+   "pass_": true,
+   "note": "longest run of bit-identical frames of a cable in mid-air"
+  },
+  "bins_upright": {
+   "value": 0.00891969912018624,
+   "limit": 3.0,
+   "pass_": true,
+   "note": "max bin tilt, deg"
+  },
+  "bins_stay_during_drop": {
+   "value": 0.00017393554847603744,
+   "limit": 10.0,
+   "pass_": true,
+   "note": "mm"
+  },
+  "bins_not_in_table": {
+   "value": 0.6924865965094451,
+   "limit": 0.0,
+   "pass_": true,
+   "note": "min bin bottom height above the table, mm"
+  },
+  "bins_in_work_zone": {
+   "value": true,
+   "limit": true,
+   "pass_": true
+  },
+  "demo_pick_in_bin": {
+   "value": 0.5161290322580645,
+   "limit": 0.5,
+   "pass_": true,
+   "note": "fraction of usbc_wave inside the blue bin at the end"
+  },
+  "demo_feeds": {
+   "value": [],
+   "limit": "reported",
+   "pass_": true,
+   "note": "grasps of the cable body carrying the trailing part into the bin after the plug transfer"
+  },
+  "plug_slip_mm": {
+   "value": 3.7278811731714314,
+   "limit": 2.0,
+   "pass_": false,
+   "note": "grip point of the plug in the flange frame while carried; rotation 5.9 deg (as the Newton check)"
+  },
+  "plug_grip_force_N": {
+   "value": {
+    "median": [
+     15.0,
+     15.0
+    ],
+    "max": 15.0
+   },
+   "limit": "cap 4 N",
+   "pass_": true,
+   "note": "per-finger joint force (PD command, force-capped) while carried"
+  },
+  "arm_joint_speed_rad_s": {
+   "value": 1.8127065896987915,
+   "limit": 3.0,
+   "pass_": true,
+   "note": "fastest arm joint between consecutive targets (no IK branch jumps)"
+  },
+  "drawn_fingers_into_plug_mm": {
+   "value": {
+    "median": 1.6591733045829282,
+    "max": 1.690828493232821
+   },
+   "limit": 2.0,
+   "pass_": true,
+   "note": "half of (plug width - drawn pad gap) while carrying; the libuipc pads hold the plug's surface, the drawn fingers trail them by grip force / coupling stiffness"
+  },
+  "demo_no_wrong_bin": {
+   "value": [],
+   "limit": [],
+   "pass_": true
+  },
+  "robot_links_clear_of_cables": {
+   "value": {},
+   "limit": 0,
+   "pass_": true,
+   "note": "cable vertices inside the convex hull of an arm link that is not a libuipc contact body, all frames"
+  },
+  "gripper_housing_vs_cables": {
+   "value": {},
+   "limit": "reported",
+   "pass_": true,
+   "note": "cable vertices inside the gripper housing's visual hull (its libuipc contact body is the palm box)"
+  },
+  "robot_links_clear_of_table_and_bins": {
+   "value": {},
+   "limit": 0,
+   "pass_": true,
+   "note": "robot link hull vertices inside the table slab or a bin, all frames (fingertips/palm excluded)"
+  },
+  "pads_above_table_mm": {
+   "value": 2.36104704010065,
+   "limit": -0.5,
+   "pass_": true,
+   "note": "lowest fingertip mesh point over the table top, all frames"
+  },
+  "plugs_above_table_mm": {
+   "value": 0.575748208910265,
+   "limit": -0.5,
+   "pass_": true,
+   "note": "lowest plug mesh point over the table top, all frames (drawn shell / pin included)"
+  },
+  "timing": {
+   "value": {
+    "drop_settle": {
+     "sim_s": 4.0,
+     "wall_s": 34.521880865097046,
+     "wall_per_sim_s": 8.630470216274261
+    },
+    "approach": {
+     "sim_s": 4.866666666666667,
+     "wall_s": 25.795257091522217,
+     "wall_per_sim_s": 5.300395292778537
+    },
+    "close": {
+     "sim_s": 1.0,
+     "wall_s": 4.857238054275513,
+     "wall_per_sim_s": 4.857238054275513
+    },
+    "lift_carry": {
+     "sim_s": 12.28888888888889,
+     "wall_s": 88.76485252380371,
+     "wall_per_sim_s": 7.223179680960518
+    },
+    "release": {
+     "sim_s": 1.0,
+     "wall_s": 5.5716822147369385,
+     "wall_per_sim_s": 5.5716822147369385
+    },
+    "retreat": {
+     "sim_s": 4.2,
+     "wall_s": 25.576111555099487,
+     "wall_per_sim_s": 6.089550370261782
+    },
+    "gpu": {
+     "name": "NVIDIA L40S, 0 %, 4869 MiB",
+     "compute_processes": 1
+    }
+   },
+   "limit": "reported",
+   "pass_": true,
+   "note": "sim s, wall s per phase"
+  },
+  "export_pose_matches_genesis": {
+   "value": 0.6055901769843608,
+   "limit": 2.0,
+   "pass_": true,
+   "note": "bin mesh x exported pose vs Genesis's own link vertices after step 1, mm (Genesis trails libuipc ~1 step)"
+  }
+ }
+}

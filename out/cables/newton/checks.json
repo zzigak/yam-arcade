@@ -1,0 +1,395 @@
+{
+ "all_pass": true,
+ "checks": {
+  "segment_stretch": {
+   "value": [
+    0.9863775636492821,
+    1.035771809574294
+   ],
+   "limit": [
+    0.9,
+    1.1
+   ],
+   "pass": true,
+   "note": "min/max centreline segment length / rest length, all cables, every 1/60 s frame"
+  },
+  "no_nan": {
+   "value": true,
+   "limit": true,
+   "pass": true
+  },
+  "below_table_mm": {
+   "value": 0.04799284784917906,
+   "limit": -0.5,
+   "pass": true,
+   "note": "min over frames of (lowest centreline z over the table top - table top - radius)"
+  },
+  "penetration_mm": {
+   "value": {
+    "cable-pad": 0.76,
+    "plug-pad": 0.625,
+    "cable-cable": 0.421,
+    "cable-self": 0.235,
+    "table-plug": 0.07,
+    "cable-plug": 0.045,
+    "table-cable": 0.043,
+    "bin-plug": 0.027,
+    "table-bin": 0.016,
+    "bin-cable": 0.015
+   },
+   "limit": 1.0,
+   "pass": true,
+   "note": "max overlap per contact category over all frames, re-evaluated at the frame's body poses from the solver's contact set (soft contacts: overlap = force / ke)"
+  },
+  "pads_above_table_mm": {
+   "value": 1.9800730497545604,
+   "limit": -0.5,
+   "pass": true
+  },
+  "arm_joint_speed_rad_s": {
+   "value": 1.1820166523271574,
+   "limit": 3.0,
+   "pass": true,
+   "note": "fastest arm joint between consecutive 1/60 s targets (no jumps between IK branches)"
+  },
+  "max_joint_gap_mm": {
+   "value": 0.5199145470998501,
+   "limit": "info",
+   "pass": true,
+   "note": "largest opening between consecutive capsule ends (hard AL stretch slots)"
+  },
+  "settle_vmax": {
+   "value": 0.0031390689354815885,
+   "limit": 0.02,
+   "pass": true,
+   "note": "fastest centreline node between the last two frames of the drop+settle (t = 4.00 s)"
+  },
+  "settle_ke": {
+   "value": 9.206951547063753e-08,
+   "limit": 2e-05,
+   "pass": true
+  },
+  "pile_retention": {
+   "value": {
+    "power_coil": 0.965,
+    "hdmi_ubend": 0.951,
+    "ext_coil": 0.963,
+    "cat6_scurve": 0.987,
+    "barrel_arc": 0.744,
+    "usbc_wave": 0.919,
+    "micro_scurve": 0.699,
+    "aux_loop": 0.813
+   },
+   "limit": 0.5,
+   "pass": true,
+   "note": "1 - RMSD(settled, rest) / RMSD(straight, rest), Kabsch-aligned, per cable"
+  },
+  "pile_curvature": {
+   "value": {
+    "power_coil": 0.997,
+    "hdmi_ubend": 1.014,
+    "ext_coil": 1.017,
+    "cat6_scurve": 1.001,
+    "barrel_arc": 1.119,
+    "usbc_wave": 1.035,
+    "micro_scurve": 0.945,
+    "aux_loop": 1.352
+   },
+   "limit": 0.75,
+   "pass": true,
+   "note": "summed |turning angle| settled / rest"
+  },
+  "iso_retention": {
+   "value": {
+    "power_coil": 0.983,
+    "hdmi_ubend": 0.998,
+    "ext_coil": 0.988,
+    "cat6_scurve": 0.994,
+    "barrel_arc": 0.996,
+    "usbc_wave": 0.995,
+    "micro_scurve": 0.995,
+    "aux_loop": 0.98
+   },
+   "limit": 0.9,
+   "pass": true,
+   "note": "each cable alone, dropped 3 cm onto the floor, after 4 s (40x3)"
+  },
+  "iso_curvature": {
+   "value": {
+    "power_coil": 1.0,
+    "hdmi_ubend": 1.0,
+    "ext_coil": 1.003,
+    "cat6_scurve": 1.001,
+    "barrel_arc": 1.001,
+    "usbc_wave": 1.0,
+    "micro_scurve": 1.0,
+    "aux_loop": 1.008
+   },
+   "limit": [
+    0.9,
+    1.1
+   ],
+   "pass": true
+  },
+  "iso_drift_mm": {
+   "value": {
+    "power_coil": 0.117,
+    "hdmi_ubend": 0.0,
+    "ext_coil": 0.053,
+    "cat6_scurve": 0.0,
+    "barrel_arc": 0.0,
+    "usbc_wave": 0.0,
+    "micro_scurve": 0.0,
+    "aux_loop": 0.0
+   },
+   "limit": 0.5,
+   "pass": true,
+   "note": "RMSD change over the last second"
+  },
+  "control_straight_rest_opens": {
+   "value": {
+    "hdmi_ubend_straight_rest": 0.121
+   },
+   "limit": 0.5,
+   "pass": true,
+   "note": "the U-bend started curved but given a straight rest pose springs open: the kept shapes come from the rest curvature, not from table friction"
+  },
+  "tangle_crossings": {
+   "value": 116,
+   "limit": 1,
+   "pass": true,
+   "note": "top-view crossings between different cables in the settled pile"
+  },
+  "tangle_interlocked_pairs": {
+   "value": 5,
+   "limit": 1,
+   "pass": true,
+   "note": "hdmi_ubend|aux_loop, ext_coil|barrel_arc, barrel_arc|micro_scurve, barrel_arc|aux_loop, micro_scurve|aux_loop"
+  },
+  "sort0_barrel_arc_plug_grip_force_N": {
+   "value": {
+    "median": [
+     6.03,
+     5.97
+    ],
+    "min": 4.67,
+    "max": 7.8
+   },
+   "limit": {
+    "target": 6.0,
+    "median_tol": 0.2,
+    "max": 12.0
+   },
+   "pass": true,
+   "note": "per-finger squeeze from VBD's contact law (avg ke x overlap) on the pad boxes, while carried"
+  },
+  "sort0_barrel_arc_plug_slip_mm": {
+   "value": 0.20231712095125712,
+   "limit": 2.0,
+   "pass": true,
+   "note": "grip point of the plug in the flange frame while carried; rotation 3.4 deg"
+  },
+  "sort0_barrel_arc_feed0_grip_force_N": {
+   "value": {
+    "median": [
+     6.02,
+     5.98
+    ],
+    "min": 5.95,
+    "max": 6.05
+   },
+   "limit": {
+    "target": 6.0,
+    "median_tol": 0.2,
+    "max": 12.0
+   },
+   "pass": true,
+   "note": "per-finger squeeze from VBD's contact law (avg ke x overlap) on the pad boxes, while carried"
+  },
+  "sort0_barrel_arc_feed0_cable_slip_mm": {
+   "value": 0.10608959372632192,
+   "limit": "info",
+   "pass": true,
+   "note": "grasped cable node in the flange frame (the cable may slide through the fingers)"
+  },
+  "sort0_barrel_arc_in_blue_bin": {
+   "value": 1.0,
+   "limit": 0.5,
+   "pass": true,
+   "note": "fraction of the cable's centreline nodes inside the cavity of the bin of its colour, at the end"
+  },
+  "sort1_cat6_scurve_plug_grip_force_N": {
+   "value": {
+    "median": [
+     5.66,
+     6.18
+    ],
+    "min": 4.13,
+    "max": 8.3
+   },
+   "limit": {
+    "target": 6.0,
+    "median_tol": 0.2,
+    "max": 12.0
+   },
+   "pass": true,
+   "note": "per-finger squeeze from VBD's contact law (avg ke x overlap) on the pad boxes, while carried"
+  },
+  "sort1_cat6_scurve_plug_slip_mm": {
+   "value": 0.7172580322238056,
+   "limit": 2.0,
+   "pass": true,
+   "note": "grip point of the plug in the flange frame while carried; rotation 7.4 deg"
+  },
+  "sort1_cat6_scurve_feed0_grip_force_N": {
+   "value": {
+    "median": [
+     5.88,
+     6.07
+    ],
+    "min": 5.07,
+    "max": 6.94
+   },
+   "limit": {
+    "target": 6.0,
+    "median_tol": 0.2,
+    "max": 12.0
+   },
+   "pass": true,
+   "note": "per-finger squeeze from VBD's contact law (avg ke x overlap) on the pad boxes, while carried"
+  },
+  "sort1_cat6_scurve_feed0_cable_slip_mm": {
+   "value": 0.567253413176884,
+   "limit": "info",
+   "pass": true,
+   "note": "grasped cable node in the flange frame (the cable may slide through the fingers)"
+  },
+  "sort1_cat6_scurve_feed1_grip_force_N": {
+   "value": {
+    "median": [
+     5.98,
+     6.02
+    ],
+    "min": 5.37,
+    "max": 6.83
+   },
+   "limit": {
+    "target": 6.0,
+    "median_tol": 0.2,
+    "max": 12.0
+   },
+   "pass": true,
+   "note": "per-finger squeeze from VBD's contact law (avg ke x overlap) on the pad boxes, while carried"
+  },
+  "sort1_cat6_scurve_feed1_cable_slip_mm": {
+   "value": 0.16699240649914424,
+   "limit": "info",
+   "pass": true,
+   "note": "grasped cable node in the flange frame (the cable may slide through the fingers)"
+  },
+  "sort1_cat6_scurve_in_orange_bin": {
+   "value": 1.0,
+   "limit": 0.5,
+   "pass": true,
+   "note": "fraction of the cable's centreline nodes inside the cavity of the bin of its colour, at the end"
+  },
+  "bin_orange_shift_mm": {
+   "value": 0.1242150643695256,
+   "limit": 10.0,
+   "pass": true
+  },
+  "bin_orange_tilt_deg": {
+   "value": 0.0018938706775713358,
+   "limit": 3.0,
+   "pass": true
+  },
+  "bin_blue_shift_mm": {
+   "value": 1.3241356550809902,
+   "limit": 10.0,
+   "pass": true
+  },
+  "bin_blue_tilt_deg": {
+   "value": 0.0008138899277674891,
+   "limit": 3.0,
+   "pass": true
+  },
+  "bend_calibration_EI_ratio": {
+   "value": {
+    "power_coil": 0.9999,
+    "hdmi_ubend": 1.0003,
+    "ext_coil": 1.0001,
+    "cat6_scurve": 1.0004,
+    "barrel_arc": 0.9998,
+    "usbc_wave": 0.9999,
+    "micro_scurve": 0.9999,
+    "aux_loop": 0.9992
+   },
+   "limit": 0.02,
+   "pass": true,
+   "note": "clamped cantilever vs heavy elastica at 40x3: effective EI / specified EI"
+  },
+  "init_plug_clearance_mm": {
+   "value": {
+    "power_coil": 28.9,
+    "ext_coil": 32.2,
+    "hdmi_ubend": 35.0,
+    "cat6_scurve": 27.0,
+    "barrel_arc": 24.2,
+    "usbc_wave": 24.2,
+    "aux_loop": 25.0,
+    "micro_scurve": 9.8
+   },
+   "limit": 0.0,
+   "pass": true,
+   "note": "plugs vs other cables, plugs, bins, table at t = 0"
+  },
+  "init_cable_clearance_mm": {
+   "value": 3.6,
+   "limit": 0.0,
+   "pass": true,
+   "note": "cable-cable and cable self gaps at t = 0"
+  },
+  "timing": {
+   "value": {
+    "drop_settle": {
+     "sim_s": 4.0,
+     "wall_s": 8.7,
+     "wall_per_sim_s": 2.19
+    },
+    "approach": {
+     "sim_s": 18.25,
+     "wall_s": 41.8,
+     "wall_per_sim_s": 2.29
+    },
+    "grasp": {
+     "sim_s": 3.48,
+     "wall_s": 8.3,
+     "wall_per_sim_s": 2.37
+    },
+    "carry": {
+     "sim_s": 28.08,
+     "wall_s": 63.7,
+     "wall_per_sim_s": 2.27
+    },
+    "release": {
+     "sim_s": 7.5,
+     "wall_s": 16.9,
+     "wall_per_sim_s": 2.25
+    },
+    "retreat": {
+     "sim_s": 4.0,
+     "wall_s": 9.3,
+     "wall_per_sim_s": 2.33
+    },
+    "total": {
+     "sim_s": 65.32,
+     "wall_s": 148.7,
+     "wall_per_sim_s": 2.28
+    }
+   },
+   "limit": "info",
+   "pass": true,
+   "note": "60 fps x 40 substeps x 3 iterations; GPU {'start': '13081 MiB, 99 %', 'end': '14117 MiB, 99 %', 'n_apps_start': 2}"
+  }
+ }
+}

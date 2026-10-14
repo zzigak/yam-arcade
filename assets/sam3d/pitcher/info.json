@@ -1,0 +1,102 @@
+{
+ "name": "pitcher",
+ "source_raw": "pitcher_brita_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y, handle along +x",
+ "target": {
+  "dim": "height",
+  "size_m": 0.25,
+  "why": "Brita 6-10 cup pitchers are 25-26 cm tall (e.g. Everyday 10-cup 26.2 cm); 25 cm chosen"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.14,
+ "yaw_applied_deg": 179.9,
+ "scale_from_sam3d_units": 0.26123,
+ "y_rescale": {
+  "factor": 0.7774,
+  "why": "photo is a pure side view, so SAM 3D had to guess the depth (17.5 cm, a round body); Brita 10-cup pitchers are 26.9 x 14.0 x 26.2 cm (L x W x H), so y is rescaled to 13.5 cm"
+ },
+ "bbox_m": [
+  0.2611,
+  0.135,
+  0.25
+ ],
+ "visual_faces": 200000,
+ "visual_lo_faces": 40000,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 1030842,
+ "raw_watertight": false,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 8000,
+  "watertight": true,
+  "volume_m3": 0.0005783614413004117,
+  "bbox_m": [
+   0.2593,
+   0.1341,
+   0.25
+  ],
+  "wall_m": 0.004,
+  "voxel_m": 0.00125,
+  "mode": "carve",
+  "sam3d_cavity_frac_of_envelope": 0.764,
+  "floor_top_z_m": 0.0038,
+  "cavity_center_xy_m": [
+   -0.0117,
+   0.0007
+  ],
+  "fill_level_z_m": 0.245
+ },
+ "capacity_l": 3.497,
+ "source_image": {
+  "title": "File:Brita water pitcher.png",
+  "creator": "Bas",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brita_water_pitcher.png",
+  "file": "https://upload.wikimedia.org/wikipedia/commons/9/93/Brita_water_pitcher.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "provider": "wikimedia",
+  "local": "_src/pitcher_a/00.png"
+ },
+ "input_png": "_work/inputs/pitcher_brita.png (mask: _work/inputs/pitcher_brita_mask.png)",
+ "verdict": "good",
+ "notes": "Brita-style filter pitcher (clear plastic in the photo; SAM 3D colours it grey-white). Visual has the lid; collision is open-topped (lid removed above 90% height), walls 4 mm, spout at -x, handle +x. Depth set from Brita proportions (see Size choices). A string tied round the handle in the photo was trimmed and painted grey; a ~1.5 cm frayed bump remains under the handle's lower arm. The visual's bottom ~3 cm is solid (SAM 3D read the water in the photo as solid); the collision cavity ignores it. Seed 42 kept over seed 7 (seed 7's lid was a flat disc).",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.2613,
+   0.1354,
+   0.2501
+  ],
+  "visual_min_z_m": -0.0,
+  "visual_center_xy_m": [
+   -0.00019,
+   0.00027
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": -4,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0037,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   3.64,
+   3.91
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -2.0,
+   -1.3,
+   -0.1
+  ],
+  "spout_tip_m": [
+   -0.1308,
+   0.0002,
+   0.2423
+  ],
+  "handle_outer_x_m": 0.1304,
+  "handle_z_range_m": [
+   0.0887,
+   0.242
+  ]
+ }
+}

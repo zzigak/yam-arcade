@@ -1,0 +1,146 @@
+[38;5;226m[Genesis] [13:19:27] [WARNING] Link 'rack' has dubious inertia [ixx=6.613e-03,iyy=6.580e-03,izz=6.678e-05] compared to the estimate from geometry [ixx=5.581e-05,iyy=6.665e-03,izz=6.690e-03].[0m
+libEGL warning: failed to open /dev/dri/renderD129: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD129: Permission denied
+
+libEGL warning: failed to open /dev/dri/card1: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/card0: Permission denied
+
+scattered {"layout": "scattered", "drift_mm": 4.311327295900167e-07, "rot_deg": 1.7075472925031877e-06, "rack_drift_mm": 3.4694469519536465e-11, "vmax_last1s_mm_s": 8.622965960232308e-08, "pen_max_mm": 0.014796532232541106, "pen_first_1s_mm": 0.026242983945050223, "disp_total_max_mm": 0.23587451763262599, "overlaps_mm": {"tile-tile": 0.0081, "tile-table": 0.0296, "tile-rack": -61.8224, "rack-table": 0.0141}, "overlap_worst_pairs": {"rack-table": ["table", "rack"], "tile-table": ["table", "tile_10_3m"], "tile-rack": ["rack", "tile_08_7z"], "tile-tile": ["tile_10_3m", "tile_11_6p"]}, "success": false, "n_correct": 0}
+[38;5;226m[Genesis] [13:19:38] [WARNING] Link 'rack' has dubious inertia [ixx=6.613e-03,iyy=6.580e-03,izz=6.678e-05] compared to the estimate from geometry [ixx=5.581e-05,iyy=6.665e-03,izz=6.690e-03].[0m
+libEGL warning: failed to open /dev/dri/renderD129: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD129: Permission denied
+
+libEGL warning: failed to open /dev/dri/card1: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/card0: Permission denied
+
+solved {"layout": "solved", "drift_mm": 0.0010825312295026212, "rot_deg": 0.0, "rack_drift_mm": 5.043443750759784e-10, "vmax_last1s_mm_s": 0.00021650627827878515, "pen_max_mm": 0.017178918863052124, "pen_first_1s_mm": 0.051632724778224226, "disp_total_max_mm": 0.17419293935156602, "overlaps_mm": {"tile-tile": -10.0, "tile-table": -12.9582, "tile-rack": 0.0206, "rack-table": 0.0344}, "overlap_worst_pairs": {"rack-table": ["table", "rack"], "tile-table": ["table", "tile_00_1m"], "tile-rack": ["rack", "tile_13_7z"], "tile-tile": ["tile_02_3m", "tile_03_4p"]}, "success": true, "n_correct": 14}
+[38;5;226m[Genesis] [13:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:19:51] [WARNING] Link 'rack' has dubious inertia [ixx=6.613e-03,iyy=6.580e-03,izz=6.678e-05] compared to the estimate from geometry [ixx=5.581e-05,iyy=6.665e-03,izz=6.690e-03].[0m
+libEGL warning: failed to open /dev/dri/renderD129: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD129: Permission denied
+
+libEGL warning: failed to open /dev/dri/card1: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/card0: Permission denied
+
+Multiple -pix_fmt options specified for stream 0, only the last option '-pix_fmt yuv420p' will be used.
+[  0.600] left: pick tile_07_2m (heading -43 deg) for slot 1 {'pick': [0.016, -0.1197, 0.754]}
+[  3.778] left: grasp ok {'width_mm': 25.4}
+[  4.978] left: transport tile_07_2m to slot 1 {'tcp_goal': [-0.198, 0.0946, 0.7872]}
+[  9.528] left: tile error 8 mm above the seat {'err_mm': [0.03, -0.46, 0.11], 'in_hand_slip_mm': 0.58}
+[ 11.428] left: released tile_07_2m 
+[ 14.028] right: pick tile_11_6p (heading 10 deg) for slot 5 {'pick': [0.2341, -0.0899, 0.775]}
+[ 17.204] right: grasp ok {'width_mm': 25.7}
+[ 18.404] right: transport tile_11_6p to slot 5 {'tcp_goal': [-0.054, 0.0945, 0.7872]}
+[ 22.954] right: tile error 8 mm above the seat {'err_mm': [-0.07, -0.45, 0.09], 'in_hand_slip_mm': 0.55}
+[ 24.854] right: released tile_11_6p 
+[ 27.454] left: pick face-down tile_01_7z (heading 3 deg) to stand it up {'pick': [-0.365, -0.205, 0.7565]}
+[ 30.830] left: grasp ok {'width_mm': 25.6}
+[ 32.030] left: turn tile_01_7z upright {'tcp_goal': [0.0039, -0.1999, 0.7707]}
+[ 36.330] left: tile error 8 mm above the table {'err_mm': [-0.36, -0.01, -0.09]}
+[ 38.130] left: released tile_01_7z standing 
+[ 41.230] right: grip standing tile_01_7z from its face side {'grasp': [-0.0065, -0.2, 0.7735], 'approach': [-0.868, -0.001, -0.497]}
+[ 44.806] right: grasp ok {'width_mm': 25.7}
+[ 46.006] right: transport tile_01_7z to slot 12 {'tcp_goal': [0.1981, 0.0946, 0.7873]}
+[ 50.956] right: tile error 8 mm above the seat {'err_mm': [-0.03, -0.08, 0.26], 'in_hand_slip_mm': 0.24}
+[ 52.856] right: released tile_01_7z 
+{
+ "demo_tile_07_2m_in_slot_1": {
+  "value": true,
+  "limit": "seated (<= 5 mm along, <= 4 mm in profile), upright & facing robot (<= 10 deg), at rest, right slot",
+  "ok": true
+ },
+ "demo_tile_11_6p_in_slot_5": {
+  "value": true,
+  "limit": "seated (<= 5 mm along, <= 4 mm in profile), upright & facing robot (<= 10 deg), at rest, right slot",
+  "ok": true
+ },
+ "demo_tile_01_7z_in_slot_12": {
+  "value": true,
+  "limit": "seated (<= 5 mm along, <= 4 mm in profile), upright & facing robot (<= 10 deg), at rest, right slot",
+  "ok": true
+ },
+ "demo_n_correct_slots": {
+  "value": 3,
+  "limit": "== 3",
+  "ok": true
+ },
+ "demo_in_hand_slip_mm": {
+  "value": 0.5827880660941961,
+  "limit": "<= 5 (tile pose in the gripper, lift -> 8 mm above the seat)",
+  "ok": true
+ },
+ "demo_untouched_tiles_moved_mm": {
+  "value": 0.013705512331887854,
+  "limit": "<= 0.3 (spawn drop only)",
+  "ok": true
+ },
+ "demo_rack_moved_mm": {
+  "value": 0.004027838810324194,
+  "limit": "<= 1.0",
+  "ok": true
+ },
+ "demo_object_penetration_mm": {
+  "value": 0.08925859626938765,
+  "limit": "<= 0.1 (tile/rack/table contacts, every step)",
+  "ok": true
+ },
+ "demo_finger_penetration_mm": {
+  "value": 0.30460108795191004,
+  "limit": "<= 1.0 (pads squeezing at 6 N, every step)",
+  "ok": true
+ },
+ "demo_robot_touches_only_its_tiles": {
+  "value": {},
+  "limit": "{} (no robot contact with table, rack, other tiles)",
+  "ok": true
+ },
+ "demo_end_box_overlap_tile-tile_mm": {
+  "value": 0.0076,
+  "limit": "<= 0.05 (< 0 = gap)",
+  "ok": true
+ },
+ "demo_end_box_overlap_tile-table_mm": {
+  "value": 0.0287,
+  "limit": "<= 0.05 (< 0 = gap)",
+  "ok": true
+ },
+ "demo_end_box_overlap_tile-rack_mm": {
+  "value": 0.0206,
+  "limit": "<= 0.05 (< 0 = gap)",
+  "ok": true
+ },
+ "demo_end_box_overlap_rack-table_mm": {
+  "value": 0.0187,
+  "limit": "<= 0.05 (< 0 = gap)",
+  "ok": true
+ },
+ "export_mesh_frame_error_mm": {
+  "value": 1.1102230246251565e-13,
+  "limit": "<= 0.01 (Genesis visual vertices mapped by the recorded pose vs the exported OBJ bounds, rack + 14 tiles)",
+  "ok": true
+ }
+}
+checks: 38/38 ok

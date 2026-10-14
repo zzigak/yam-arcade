@@ -1,0 +1,24 @@
+{
+ "tip": [
+  0.035,
+  0.0,
+  0.0
+ ],
+ "boot": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "length": 0.035,
+ "volume": 5.058000000000001e-06,
+ "hull": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/rj45_hull.obj",
+ "visual": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/rj45_visual.obj",
+ "urdf": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/rj45.urdf",
+ "width": 0.014,
+ "height": 0.011,
+ "mass": 0.005,
+ "body_x": [
+  0.0,
+  0.035
+ ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="rj45">
+  <link name="rj45">
+    <visual><geometry><mesh filename="rj45_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="rj45_hull.obj"/></geometry></collision>
+  </link>
+</robot>

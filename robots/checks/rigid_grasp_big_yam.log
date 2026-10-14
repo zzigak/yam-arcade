@@ -1,0 +1,42 @@
+{
+ "variant": "big_yam",
+ "mode": "rigid",
+ "dt": 0.01,
+ "grip_force_N": 10.0,
+ "cube_start": [
+  0.25,
+  0.10000000149011612,
+  0.7699999809265137
+ ],
+ "cube_end": [
+  0.2524999976158142,
+  0.09669999778270721,
+  0.8654999732971191
+ ],
+ "lift_m": 0.0956,
+ "slip_m": 0.0039,
+ "width_at_grip": 0.0374,
+ "finger_force_hold": [
+  -10.0,
+  -10.0
+ ],
+ "robot_zmin_min": 0.75,
+ "wall_s": 85.5,
+ "checks": {
+  "lifted": {
+   "value": 0.0956,
+   "limit": ">= 0.095",
+   "ok": true
+  },
+  "slip": {
+   "value": 0.0039,
+   "limit": "|.| <= 0.005",
+   "ok": true
+  },
+  "width": {
+   "value": 0.0374,
+   "limit": "0.035..0.041 (4 cm cube, pads squeeze)",
+   "ok": true
+  }
+ }
+}

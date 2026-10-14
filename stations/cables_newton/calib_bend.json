@@ -1,0 +1,602 @@
+{
+ "10x20": {
+  "power_coil": {
+   "scale": 1.1395628499701977,
+   "EI_ratio": 0.9998567092306335,
+   "overhang": 0.336,
+   "tip_drop": 0.2141523191452026,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.006422435104636503,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.1791807948127324,
+   "EI_ratio": 1.0001344163475934,
+   "overhang": 0.312,
+   "tip_drop": 0.20354313465952867,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.012066625144030832,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.2690249911509017,
+   "EI_ratio": 1.000094869387431,
+   "overhang": 0.264,
+   "tip_drop": 0.16441324207782748,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.011366695287045014,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 1.4605468084917061,
+   "EI_ratio": 1.0000570445346497,
+   "overhang": 0.22,
+   "tip_drop": 0.14363245373964306,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.010812411706835534,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 2.1816445012988477,
+   "EI_ratio": 1.000130144139139,
+   "overhang": 0.153,
+   "tip_drop": 0.09650281621813775,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.007614390193868762,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 2.5673648960862594,
+   "EI_ratio": 0.999903143256293,
+   "overhang": 0.126,
+   "tip_drop": 0.084170521992445,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.014558699105642106,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 2.8065433919534204,
+   "EI_ratio": 1.0000310443779188,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.07647685993313788,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.012600803849502806,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": 2.9626252701551357,
+   "EI_ratio": 0.9999878236922555,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.060131075739860554,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.01625495437983656,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 10 substeps x 20 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.8748, 'hdmi_ubend': 0.8557, 'ext_coil': 0.7774, 'cat6_scurve': 0.6685, 'barrel_arc': 0.421, 'usbc_wave': 0.3279, 'micro_scurve': 0.2893, 'aux_loop': 0.2712}, {'power_coil': 1.0031, 'hdmi_ubend': 0.9914, 'ext_coil': 1.0142, 'cat6_scurve': 1.0252, 'barrel_arc': 1.0938, 'usbc_wave': 1.203, 'micro_scurve': 1.2499, 'aux_loop': 1.2617}, {'power_coil': 1.0001, 'hdmi_ubend': 1.0, 'ext_coil': 1.0002, 'cat6_scurve': 1.0003, 'barrel_arc': 1.0009, 'usbc_wave': 1.003, 'micro_scurve': 1.0043, 'aux_loop': 1.0051}]"
+ },
+ "10x10": {
+  "power_coil": {
+   "scale": 1.2546831336920592,
+   "EI_ratio": 0.9999548422987431,
+   "overhang": 0.336,
+   "tip_drop": 0.21414288833141323,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.020655175941148598,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.3778341979889106,
+   "EI_ratio": 1.000092422608109,
+   "overhang": 0.312,
+   "tip_drop": 0.20354677962064743,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.025443316340423745,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.6808365106701386,
+   "EI_ratio": 0.9998151467622693,
+   "overhang": 0.264,
+   "tip_drop": 0.1644348600625992,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.031263352870401405,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 2.1448259004861407,
+   "EI_ratio": 0.9999908932560753,
+   "overhang": 0.22,
+   "tip_drop": 0.14363649886846544,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.03437553099370853,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 3.6700331577306753,
+   "EI_ratio": 1.0000295554075138,
+   "overhang": 0.153,
+   "tip_drop": 0.09650726577043534,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.025140009478894602,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 4.4548241051690765,
+   "EI_ratio": 1.0000859950125938,
+   "overhang": 0.126,
+   "tip_drop": 0.08416431669592858,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.015453836491048364,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 4.9323577613510805,
+   "EI_ratio": 0.999968391838842,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.07647889438271523,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.016883618287346646,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": NaN,
+   "EI_ratio": NaN,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.0936444718182087,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.05638689976045619,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 10 substeps x 10 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.7803, 'hdmi_ubend': 0.7105, 'ext_coil': 0.5789, 'cat6_scurve': 0.4218, 'barrel_arc': 0.2147, 'usbc_wave': 0.149, 'micro_scurve': 0.126, 'aux_loop': nan}, {'power_coil': 1.0218, 'hdmi_ubend': 1.0213, 'ext_coil': 1.0292, 'cat6_scurve': 1.1103, 'barrel_arc': 1.2875, 'usbc_wave': 1.5463, 'micro_scurve': 1.6543, 'aux_loop': nan}, {'power_coil': 1.0012, 'hdmi_ubend': 1.0012, 'ext_coil': 0.9997, 'cat6_scurve': 1.0031, 'barrel_arc': 1.0019, 'usbc_wave': 1.0057, 'micro_scurve': 1.0073, 'aux_loop': nan}]"
+ },
+ "20x10": {
+  "power_coil": {
+   "scale": 1.0817460506490881,
+   "EI_ratio": 1.0000455720729162,
+   "overhang": 0.336,
+   "tip_drop": 0.21413416941165925,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.00791090353001622,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.0948893227287202,
+   "EI_ratio": 1.0002568892524666,
+   "overhang": 0.312,
+   "tip_drop": 0.20353250468969342,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.00580964654130652,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.1286190091254666,
+   "EI_ratio": 1.0000192549445945,
+   "overhang": 0.264,
+   "tip_drop": 0.16441908550262455,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.0033740014552051745,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 1.19225205439683,
+   "EI_ratio": 1.000381988307752,
+   "overhang": 0.22,
+   "tip_drop": 0.14361258530616755,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.0043322636442100345,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 1.5204325003369064,
+   "EI_ratio": 0.9998602157349197,
+   "overhang": 0.153,
+   "tip_drop": 0.0965147570669651,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.00320913166503242,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 1.717263729874026,
+   "EI_ratio": 0.9999041692917235,
+   "overhang": 0.126,
+   "tip_drop": 0.08417048717141153,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.0031554831500986277,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 1.8334366845261953,
+   "EI_ratio": 1.0003237861639045,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.07646735480427741,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.003570942076845915,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": 1.917863537779052,
+   "EI_ratio": 1.0002550611619834,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.06012316403388977,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.003933031782425195,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 20 substeps x 10 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.9222, 'hdmi_ubend': 0.9146, 'ext_coil': 0.8782, 'cat6_scurve': 0.8317, 'barrel_arc': 0.635, 'usbc_wave': 0.5414, 'micro_scurve': 0.5011, 'aux_loop': 0.4775}, {'power_coil': 1.0025, 'hdmi_ubend': 0.999, 'ext_coil': 1.0091, 'cat6_scurve': 1.0093, 'barrel_arc': 1.0383, 'usbc_wave': 1.0816, 'micro_scurve': 1.0955, 'aux_loop': 1.0994}, {'power_coil': 1.0, 'hdmi_ubend': 0.9995, 'ext_coil': 1.0004, 'cat6_scurve': 0.9996, 'barrel_arc': 0.9998, 'usbc_wave': 1.0012, 'micro_scurve': 1.0014, 'aux_loop': 1.0008}]"
+ },
+ "10x40": {
+  "power_coil": {
+   "scale": 1.1055788878132908,
+   "EI_ratio": 1.0000485443853153,
+   "overhang": 0.336,
+   "tip_drop": 0.21413388378620146,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.0017832850952028921,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.1139880124550372,
+   "EI_ratio": 0.9998871192009734,
+   "overhang": 0.312,
+   "tip_drop": 0.20356460049748418,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.0022201731110813292,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.1332806230176442,
+   "EI_ratio": 0.9999877592072882,
+   "overhang": 0.264,
+   "tip_drop": 0.1644215195417404,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.0025155581814954187,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 1.1863703322740033,
+   "EI_ratio": 0.9999356995105527,
+   "overhang": 0.22,
+   "tip_drop": 0.14363987404108045,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.0041114902623414695,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 1.4854536712951423,
+   "EI_ratio": 1.0000767039470224,
+   "overhang": 0.153,
+   "tip_drop": 0.09650518012046815,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.0060810480155902725,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 1.6802587365969224,
+   "EI_ratio": 1.000150350485444,
+   "overhang": 0.126,
+   "tip_drop": 0.08416213282346727,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.0021255316142015,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 1.7960149606340294,
+   "EI_ratio": 0.9998311990029999,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.07648334950208663,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.005089678424339765,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": 1.8840450692723993,
+   "EI_ratio": 1.0001531121930025,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.06012618213295936,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.012691693763120543,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 10 substeps x 40 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.9029, 'hdmi_ubend': 0.9011, 'ext_coil': 0.8749, 'cat6_scurve': 0.8362, 'barrel_arc': 0.6528, 'usbc_wave': 0.5548, 'micro_scurve': 0.5123, 'aux_loop': 0.4887}, {'power_coil': 1.0018, 'hdmi_ubend': 0.9965, 'ext_coil': 1.0091, 'cat6_scurve': 1.0084, 'barrel_arc': 1.0332, 'usbc_wave': 1.0789, 'micro_scurve': 1.0941, 'aux_loop': 1.0927}, {'power_coil': 1.0001, 'hdmi_ubend': 0.9998, 'ext_coil': 1.0001, 'cat6_scurve': 1.0, 'barrel_arc': 1.0001, 'usbc_wave': 1.0009, 'micro_scurve': 1.0012, 'aux_loop': 1.0009}]"
+ },
+ "20x20": {
+  "power_coil": {
+   "scale": 1.0797400962268386,
+   "EI_ratio": 0.999778870678441,
+   "overhang": 0.336,
+   "tip_drop": 0.21415979994535445,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.006217676667104345,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.0963000612944276,
+   "EI_ratio": 0.9998822503365588,
+   "overhang": 0.312,
+   "tip_drop": 0.20356502314805985,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.006088905453811027,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.1344558535833698,
+   "EI_ratio": 1.0002091296777431,
+   "overhang": 0.264,
+   "tip_drop": 0.1644044126033783,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.0016929882708480262,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 1.1337646840134397,
+   "EI_ratio": 0.9998245179491081,
+   "overhang": 0.22,
+   "tip_drop": 0.14364667320251465,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.002407713615997423,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 1.225357697664355,
+   "EI_ratio": 1.000033506437431,
+   "overhang": 0.153,
+   "tip_drop": 0.09650709099173546,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.001276413120486321,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 1.319614906110007,
+   "EI_ratio": 1.0000525431839762,
+   "overhang": 0.126,
+   "tip_drop": 0.08416545189023017,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.0018916608114077516,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 1.3695721205866362,
+   "EI_ratio": 1.0000496746936158,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.0764762549817562,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.0020306041310193305,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": 1.418186264833868,
+   "EI_ratio": 1.0000408169491006,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.06012950674295427,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.0022380056782966454,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 20 substeps x 20 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.9242, 'hdmi_ubend': 0.9095, 'ext_coil': 0.8748, 'cat6_scurve': 0.8808, 'barrel_arc': 0.8054, 'usbc_wave': 0.7371, 'micro_scurve': 0.7075, 'aux_loop': 0.6819}, {'power_coil': 1.0018, 'hdmi_ubend': 1.0032, 'ext_coil': 1.0084, 'cat6_scurve': 1.0016, 'barrel_arc': 1.0141, 'usbc_wave': 1.0303, 'micro_scurve': 1.0343, 'aux_loop': 1.0371}, {'power_coil': 1.0003, 'hdmi_ubend': 0.9999, 'ext_coil': 0.9997, 'cat6_scurve': 0.9998, 'barrel_arc': 0.9999, 'usbc_wave': 1.0002, 'micro_scurve': 1.0003, 'aux_loop': 0.9996}]"
+ },
+ "40x3": {
+  "power_coil": {
+   "scale": 1.1185242333970369,
+   "EI_ratio": 0.9998797607825025,
+   "overhang": 0.336,
+   "tip_drop": 0.21415010379552837,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.04739346983118561,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.1354172516532304,
+   "EI_ratio": 1.0003247750371307,
+   "overhang": 0.312,
+   "tip_drop": 0.20352661283612247,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.03650424785795602,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.1779007379912616,
+   "EI_ratio": 1.0000536509713953,
+   "overhang": 0.264,
+   "tip_drop": 0.16441642737388612,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.022419480294040322,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 1.240935888112141,
+   "EI_ratio": 1.0004225958933193,
+   "overhang": 0.22,
+   "tip_drop": 0.14361010259389878,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.01628052473578471,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 1.5195831130621549,
+   "EI_ratio": 0.9997681434226547,
+   "overhang": 0.153,
+   "tip_drop": 0.09651883047223091,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.007818114599096369,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 1.6965909735772677,
+   "EI_ratio": 0.9998814900032528,
+   "overhang": 0.126,
+   "tip_drop": 0.08417125685214998,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.00555370480254994,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 1.7944908366944892,
+   "EI_ratio": 0.9998781063952594,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.07648182622790337,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.004782454899348303,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": 1.8709459648431204,
+   "EI_ratio": 0.9991578236322693,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.06015565664172173,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.003737682258166103,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 40 substeps x 3 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.8891, 'hdmi_ubend': 0.8818, 'ext_coil': 0.8388, 'cat6_scurve': 0.7969, 'barrel_arc': 0.636, 'usbc_wave': 0.5491, 'micro_scurve': 0.5132, 'aux_loop': 0.4912}, {'power_coil': 1.0057, 'hdmi_ubend': 0.9989, 'ext_coil': 1.0131, 'cat6_scurve': 1.0121, 'barrel_arc': 1.0367, 'usbc_wave': 1.0799, 'micro_scurve': 1.0916, 'aux_loop': 1.0943}, {'power_coil': 1.0002, 'hdmi_ubend': 0.9999, 'ext_coil': 0.9999, 'cat6_scurve': 0.9997, 'barrel_arc': 1.0002, 'usbc_wave': 1.0007, 'micro_scurve': 1.0024, 'aux_loop': 1.0018}]"
+ },
+ "60x3": {
+  "power_coil": {
+   "scale": 1.1111677536438282,
+   "EI_ratio": 0.9994001851990333,
+   "overhang": 0.336,
+   "tip_drop": 0.21419619836807252,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.048202622178505544,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.1235620507392958,
+   "EI_ratio": 1.000023932893876,
+   "overhang": 0.312,
+   "tip_drop": 0.20355272452235224,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.03683169808717071,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.1463612020656742,
+   "EI_ratio": 0.9996814441040837,
+   "overhang": 0.264,
+   "tip_drop": 0.16444519429206847,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.021926743860137647,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 1.1631877970462052,
+   "EI_ratio": 0.9995154972723267,
+   "overhang": 0.22,
+   "tip_drop": 0.1436655727624893,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.014783763770706842,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 1.2620166452780397,
+   "EI_ratio": 0.999667724197401,
+   "overhang": 0.153,
+   "tip_drop": 0.09652327338457109,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.005943413227393157,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 1.3484334339628758,
+   "EI_ratio": 1.000355056289166,
+   "overhang": 0.126,
+   "tip_drop": 0.08415518660545349,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.00447975544469334,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 1.3882966532315621,
+   "EI_ratio": 1.0002555724201752,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.07646956954598426,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.0036966425556912846,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": 1.4312173756072062,
+   "EI_ratio": 1.0002779237639037,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.06012248723506928,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.0028391968687388794,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 60 substeps x 3 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.8933, 'hdmi_ubend': 0.8903, 'ext_coil': 0.8646, 'cat6_scurve': 0.8536, 'barrel_arc': 0.7803, 'usbc_wave': 0.7187, 'micro_scurve': 0.6967, 'aux_loop': 0.6737}, {'power_coil': 1.0075, 'hdmi_ubend': 0.9998, 'ext_coil': 1.0089, 'cat6_scurve': 1.008, 'barrel_arc': 1.0153, 'usbc_wave': 1.0346, 'micro_scurve': 1.0368, 'aux_loop': 1.0395}, {'power_coil': 1.0003, 'hdmi_ubend': 0.9999, 'ext_coil': 1.0004, 'cat6_scurve': 0.9995, 'barrel_arc': 1.0009, 'usbc_wave': 1.0001, 'micro_scurve': 0.9999, 'aux_loop': 1.0006}]"
+ },
+ "40x5": {
+  "power_coil": {
+   "scale": 1.1027617727616346,
+   "EI_ratio": 1.0000344658864355,
+   "overhang": 0.336,
+   "tip_drop": 0.2141352366685867,
+   "target_drop": 0.2141385487311095,
+   "max_gap_mm": 0.027401797836982312,
+   "Lb": 0.1686516855794842
+  },
+  "hdmi_ubend": {
+   "scale": 1.1136534810469465,
+   "EI_ratio": 1.0000266179490571,
+   "overhang": 0.312,
+   "tip_drop": 0.20355249145627022,
+   "target_drop": 0.20355480193953052,
+   "max_gap_mm": 0.020496932709552364,
+   "Lb": 0.15383588480183064
+  },
+  "ext_coil": {
+   "scale": 1.1315840291615054,
+   "EI_ratio": 0.999831127321692,
+   "overhang": 0.264,
+   "tip_drop": 0.16443362493515012,
+   "target_drop": 0.16442057354929723,
+   "max_gap_mm": 0.01162461214493344,
+   "Lb": 0.13474544037824113
+  },
+  "cat6_scurve": {
+   "scale": 1.1529892197353022,
+   "EI_ratio": 1.0005753346444468,
+   "overhang": 0.22,
+   "tip_drop": 0.14360076469182967,
+   "target_drop": 0.14363594198684598,
+   "max_gap_mm": 0.007599624375206336,
+   "Lb": 0.10841274359100218
+  },
+  "barrel_arc": {
+   "scale": 1.2799992910641822,
+   "EI_ratio": 0.9996955987943702,
+   "overhang": 0.153,
+   "tip_drop": 0.09652204008698465,
+   "target_drop": 0.09650857320216794,
+   "max_gap_mm": 0.0029593301801012282,
+   "Lb": 0.07738131467672499
+  },
+  "usbc_wave": {
+   "scale": 1.3874112475430922,
+   "EI_ratio": 1.0002433985774999,
+   "overhang": 0.126,
+   "tip_drop": 0.08415897538065911,
+   "target_drop": 0.08416723498425727,
+   "max_gap_mm": 0.001872355311166178,
+   "Lb": 0.06095923285308941
+  },
+  "micro_scurve": {
+   "scale": 1.4437307443721872,
+   "EI_ratio": 1.0003863457990245,
+   "overhang": 0.11699999999999999,
+   "tip_drop": 0.07646532369852065,
+   "target_drop": 0.0764778679971413,
+   "max_gap_mm": 0.0018908777888196216,
+   "Lb": 0.057602865492787834
+  },
+  "aux_loop": {
+   "scale": 1.4985242267130212,
+   "EI_ratio": 1.0007745779254686,
+   "overhang": 0.09899999999999999,
+   "tip_drop": 0.0601077871978283,
+   "target_drop": 0.06013071522550945,
+   "max_gap_mm": 0.002056357461500096,
+   "Lb": 0.05141500824003116
+  },
+  "_note": "clamped cantilever vs heavy elastica, 60 fps x 40 substeps x 5 iterations, gravity ramp 2 s + hold 3 s; scale = per-joint bend stiffness / (EI / segment); rounds: [{'power_coil': 0.9046, 'hdmi_ubend': 0.9002, 'ext_coil': 0.8763, 'cat6_scurve': 0.8619, 'barrel_arc': 0.7677, 'usbc_wave': 0.6944, 'micro_scurve': 0.6635, 'aux_loop': 0.6376}, {'power_coil': 1.0022, 'hdmi_ubend': 0.9972, 'ext_coil': 1.0088, 'cat6_scurve': 1.007, 'barrel_arc': 1.0185, 'usbc_wave': 1.0414, 'micro_scurve': 1.048, 'aux_loop': 1.0509}, {'power_coil': 1.0002, 'hdmi_ubend': 1.0004, 'ext_coil': 1.0002, 'cat6_scurve': 0.9996, 'barrel_arc': 1.0003, 'usbc_wave': 1.0, 'micro_scurve': 1.0001, 'aux_loop': 0.9999}]"
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "success": {
+  "spice": {
+   "ok": true,
+   "offset_xy_mm": 0.005945856654217011,
+   "tilt_deg": 0.0004250043705579855,
+   "height_above_rim_mm": 0.1861898297018244,
+   "engaged_turns": 1.1236028127312345
+  },
+  "jam": {
+   "ok": true,
+   "offset_xy_mm": 0.006424310178191337,
+   "tilt_deg": 0.0007707055894250512,
+   "height_above_rim_mm": 0.18741949590468654,
+   "engaged_turns": 1.109377482327511
+  },
+  "mason": {
+   "ok": true,
+   "offset_xy_mm": 0.012087195966980449,
+   "tilt_deg": 0.00029605886125270146,
+   "height_above_rim_mm": 0.18593752906387317,
+   "engaged_turns": 1.0932343937298257
+  },
+  "all": true
+ },
+ "events": [
+  {
+   "t": 0.3,
+   "msg": "mason: drive to lid (base x -0.235), hand yaw +2.55 rad"
+  },
+  {
+   "t": 3.34,
+   "msg": "mason: lid gripped, width 73.1 mm, lid-TCP dz 11.02 mm"
+  },
+  {
+   "t": 4.24,
+   "msg": "mason: drive to jar (base x +0.120)"
+  },
+  {
+   "t": 9.18,
+   "msg": "mason: jar held, width 82.4 mm"
+  },
+  {
+   "t": 9.18,
+   "msg": "mason: lid yaw rel jar at landing -0.1 deg -> thread lands 1.000 turns out"
+  },
+  {
+   "t": 10.38,
+   "msg": "mason: lid on mouth: h 4.457 mm, xy 0.04 mm, tilt 0.03 deg"
+  },
+  {
+   "t": 13.253,
+   "msg": "mason: stroke end: wrist 0.605 turn, lid 0.606 turn"
+  },
+  {
+   "t": 13.253,
+   "msg": "mason: stroke 1: wrist turned 0.605 turn, lid h 1.894 mm, xy 0.28 mm, tilt 0.24, engaged 0.606 turn, stalled False"
+  },
+  {
+   "t": 15.447,
+   "msg": "mason: regrasped: lid turned +0.000 turn during the regrasp, h 1.893 mm, width 73.1 mm"
+  },
+  {
+   "t": 17.68,
+   "msg": "mason: lid stopped following the wrist (7 deg) - seated"
+  },
+  {
+   "t": 17.68,
+   "msg": "mason: stroke end: wrist 0.507 turn, lid 0.486 turn"
+  },
+  {
+   "t": 17.68,
+   "msg": "mason: stroke 2: wrist turned 0.507 turn, lid h 0.186 mm, xy 0.01 mm, tilt 0.00, engaged 1.093 turn, stalled True"
+  },
+  {
+   "t": 20.307,
+   "msg": "mason: done; success so far {\"ok\": true, \"offset_xy_mm\": 0.012383217779242664, \"tilt_deg\": 0.00034805912866928845, \"height_above_rim_mm\": 0.18593772731528846, \"engaged_turns\": 1.0932197693985277}"
+  },
+  {
+   "t": 20.307,
+   "msg": "jam: drive to lid (base x -0.065), hand yaw +2.55 rad"
+  },
+  {
+   "t": 23.367,
+   "msg": "jam: lid gripped, width 65.4 mm, lid-TCP dz 9.02 mm"
+  },
+  {
+   "t": 24.267,
+   "msg": "jam: drive to jar (base x -0.220)"
+  },
+  {
+   "t": 29.207,
+   "msg": "jam: jar held, width 68.3 mm"
+  },
+  {
+   "t": 29.207,
+   "msg": "jam: lid yaw rel jar at landing -0.0 deg -> thread lands 1.000 turns out"
+  },
+  {
+   "t": 30.407,
+   "msg": "jam: lid on mouth: h 3.826 mm, xy 0.16 mm, tilt 0.15 deg"
+  },
+  {
+   "t": 33.28,
+   "msg": "jam: stroke end: wrist 0.605 turn, lid 0.607 turn"
+  },
+  {
+   "t": 33.28,
+   "msg": "jam: stroke 1: wrist turned 0.605 turn, lid h 1.648 mm, xy 0.30 mm, tilt 0.28, engaged 0.607 turn, stalled False"
+  },
+  {
+   "t": 35.46,
+   "msg": "jam: regrasped: lid turned +0.000 turn during the regrasp, h 1.646 mm, width 65.4 mm"
+  },
+  {
+   "t": 37.753,
+   "msg": "jam: lid stopped following the wrist (7 deg) - seated"
+  },
+  {
+   "t": 37.753,
+   "msg": "jam: stroke end: wrist 0.522 turn, lid 0.502 turn"
+  },
+  {
+   "t": 37.753,
+   "msg": "jam: stroke 2: wrist turned 0.522 turn, lid h 0.189 mm, xy 0.01 mm, tilt 0.00, engaged 1.109 turn, stalled True"
+  },
+  {
+   "t": 40.36,
+   "msg": "jam: done; success so far {\"ok\": true, \"offset_xy_mm\": 0.006226470976356845, \"tilt_deg\": 0.0009028405017718876, \"height_above_rim_mm\": 0.18753753456007827, \"engaged_turns\": 1.1093610750471208}"
+  },
+  {
+   "t": 40.36,
+   "msg": "spice: drive to lid (base x -0.405), hand yaw +2.55 rad"
+  },
+  {
+   "t": 43.42,
+   "msg": "spice: lid gripped, width 46.3 mm, lid-TCP dz 8.52 mm"
+  },
+  {
+   "t": 44.32,
+   "msg": "spice: drive to jar (base x -0.050)"
+  },
+  {
+   "t": 49.26,
+   "msg": "spice: jar held, width 46.4 mm"
+  },
+  {
+   "t": 49.26,
+   "msg": "spice: lid yaw rel jar at landing +0.0 deg -> thread lands 1.000 turns out"
+  },
+  {
+   "t": 50.46,
+   "msg": "spice: lid on mouth: h 3.427 mm, xy 0.13 mm, tilt 0.18 deg"
+  },
+  {
+   "t": 53.333,
+   "msg": "spice: stroke end: wrist 0.605 turn, lid 0.608 turn"
+  },
+  {
+   "t": 53.333,
+   "msg": "spice: stroke 1: wrist turned 0.605 turn, lid h 1.499 mm, xy 0.31 mm, tilt 0.41, engaged 0.608 turn, stalled False"
+  },
+  {
+   "t": 55.46,
+   "msg": "spice: regrasped: lid turned +0.001 turn during the regrasp, h 1.483 mm, width 46.3 mm"
+  },
+  {
+   "t": 57.8,
+   "msg": "spice: lid stopped following the wrist (7 deg) - seated"
+  },
+  {
+   "t": 57.8,
+   "msg": "spice: stroke end: wrist 0.534 turn, lid 0.515 turn"
+  },
+  {
+   "t": 57.8,
+   "msg": "spice: stroke 2: wrist turned 0.534 turn, lid h 0.186 mm, xy 0.01 mm, tilt 0.00, engaged 1.123 turn, stalled True"
+  },
+  {
+   "t": 60.36,
+   "msg": "spice: done; success so far {\"ok\": true, \"offset_xy_mm\": 0.006069588566417135, \"tilt_deg\": 0.0004060876319862153, \"height_above_rim_mm\": 0.18618977755069377, \"engaged_turns\": 1.1236422017118393}"
+  }
+ ]
+}

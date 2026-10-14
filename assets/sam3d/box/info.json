@@ -1,0 +1,89 @@
+{
+ "name": "box",
+ "source_raw": "box_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y",
+ "target": {
+  "dim": "length",
+  "size_m": 0.32,
+  "why": "open cardboard box sized for a 1.2 x 0.7 m table: 32 cm long (photo proportions give the rest)"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.86,
+ "yaw_applied_deg": 167.9,
+ "scale_from_sam3d_units": 0.28764,
+ "y_rescale": null,
+ "bbox_m": [
+  0.3201,
+  0.2609,
+  0.1566
+ ],
+ "visual_faces": 199998,
+ "visual_lo_faces": 39998,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 636348,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 3000,
+  "watertight": true,
+  "volume_m3": 0.0006380286098319456,
+  "bbox_m": [
+   0.3169,
+   0.2569,
+   0.1523
+  ],
+  "wall_m": 0.004,
+  "voxel_m": 0.0015,
+  "mode": "carve",
+  "sam3d_cavity_frac_of_envelope": 0.0,
+  "floor_top_z_m": 0.0045,
+  "cavity_center_xy_m": [
+   -0.0007,
+   -0.0005
+  ],
+  "fill_level_z_m": 0.135
+ },
+ "capacity_l": 6.956,
+ "source_image": {
+  "title": "Empty Box",
+  "creator": "z287marc",
+  "license": "BY 2.0",
+  "page": "https://www.flickr.com/photos/34316169@N08/3189567558",
+  "file": "https://live.staticflickr.com/3093/3189567558_6d0b1c7b6b_b.jpg",
+  "provider": "flickr",
+  "local": "_src/ov/box2/full00.jpg"
+ },
+ "input_png": "_work/inputs/box.png (mask: _work/inputs/box_mask.png)",
+ "verdict": "good",
+ "notes": "open-top cardboard box (flaps removed), long side along x. Collision = the visual's convex hull carved to a 4 mm-wall open box (SAM 3D's own cardboard walls were too thin and ragged to voxelise cleanly); its rim follows the hull top, which slopes 1.5 cm from corner to corner. Rescale freely if the cables station needs another size.",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.3202,
+   0.2608,
+   0.1566
+  ],
+  "visual_min_z_m": -5e-05,
+  "visual_center_xy_m": [
+   3e-05,
+   5e-05
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 0,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0045,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   2.29,
+   3.33
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -3.3,
+   -4.0,
+   -4.4
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "tip_left": [
+  {
+   "pos": [
+    -0.06990947611436095,
+    0.023991674110578065,
+    -0.04954208078210809
+   ],
+   "half": [
+    0.004,
+    0.015,
+    0.019750000000000004
+   ],
+   "quat": [
+    0.7071067811837193,
+    2.8284271246916414e-06,
+    -0.7071067811837196,
+    0.0
+   ]
+  }
+ ],
+ "tip_right": [
+  {
+   "pos": [
+    -0.02399319996341999,
+    -0.06990981420228708,
+    -0.04954215179350754
+   ],
+   "half": [
+    0.004,
+    0.015,
+    0.019750000000000004
+   ],
+   "quat": [
+    0.5000010606594685,
+    0.49999893933828204,
+    0.49999893933828204,
+    -0.5000010606594691
+   ]
+  }
+ ],
+ "palm": [
+  {
+   "pos": [
+    -2.6569348124394487e-08,
+    -1.8581715333088056e-10,
+    0.01918824185582034
+   ],
+   "half": [
+    0.05000000161539025,
+    0.03150000022777346,
+    0.02968824201699164
+   ]
+  }
+ ],
+ "note": "Measure linear_4310 fingertip pads + palm from the meshes and write assets/robots/gripper_collision.json:\nbox collision geoms (half sizes + centres) in each tip body frame and in the gripper mount frame.\n\nFinger joint q (joint7/joint8): 0 = closed (distal pads meet), 0.0475 = fully open. The distal 4 cm of each tip is\nthe pad; each collision pad is recessed RECESS behind the mesh face so the two pads keep a gap at q = 0 (libuipc\nrejects touching link geometry at init), and the palm box stops 2 mm short of the finger carriages."
+}

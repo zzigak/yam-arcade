@@ -1,0 +1,89 @@
+{
+ "name": "urn",
+ "source_raw": "urn_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y",
+ "target": {
+  "dim": "height",
+  "size_m": 0.3,
+  "why": "~2 gallon (7.5 L) acrylic beverage dispenser, ~30 cm tall without a stand"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.02,
+ "yaw_applied_deg": 0.0,
+ "scale_from_sam3d_units": 0.30131,
+ "y_rescale": null,
+ "bbox_m": [
+  0.2442,
+  0.2617,
+  0.3004
+ ],
+ "visual_faces": 199998,
+ "visual_lo_faces": 39998,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 1028244,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 8000,
+  "watertight": true,
+  "volume_m3": 0.0007773125071824285,
+  "bbox_m": [
+   0.2446,
+   0.2613,
+   0.2689
+  ],
+  "wall_m": 0.004,
+  "voxel_m": 0.0015,
+  "mode": "carve",
+  "sam3d_cavity_frac_of_envelope": 0.821,
+  "floor_top_z_m": 0.0045,
+  "cavity_center_xy_m": [
+   0.0001,
+   0.0167
+  ],
+  "fill_level_z_m": 0.27
+ },
+ "capacity_l": 8.535,
+ "source_image": {
+  "title": "Acrylic Beverage Dispenser",
+  "creator": "FestivitiesMN",
+  "license": "BY-NC-SA 2.0",
+  "page": "https://www.flickr.com/photos/38227433@N04/17247818641",
+  "file": "https://live.staticflickr.com/8747/17247818641_b5f54dff5c_b.jpg",
+  "provider": "flickr",
+  "local": "_src/ov/urn/full05.jpg"
+ },
+ "input_png": "_work/inputs/urn.png (mask: _work/inputs/urn_mask.png)",
+ "verdict": "good (optional)",
+ "notes": "acrylic drink dispenser with a tap facing -y; visual has its lid, collision is open-topped (lid cut at 86% height). Tap is visual only (solid).",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.2442,
+   0.2625,
+   0.301
+  ],
+  "visual_min_z_m": -0.00074,
+  "visual_center_xy_m": [
+   2e-05,
+   -0.00032
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 2,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0045,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   3.11,
+   3.46
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   0.3,
+   -1.3,
+   -32.1
+  ]
+ }
+}

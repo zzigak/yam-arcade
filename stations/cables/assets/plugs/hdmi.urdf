@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="hdmi">
+  <link name="hdmi">
+    <visual><geometry><mesh filename="hdmi_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="hdmi_hull.obj"/></geometry></collision>
+  </link>
+</robot>

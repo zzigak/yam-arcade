@@ -1,0 +1,53 @@
+{
+ "reusable_assets": [
+  {
+   "logical_name": "pitcher",
+   "mesh": "/home/ziga/projects/yam-arcade/assets/sam3d/pitcher/collision_hollow.obj",
+   "file_meshes_are_zup": true,
+   "simulation_role": "Brita-style pitcher, open-top watertight collision container (Z-up, metres, base at z=0, spout toward -x, handle +x); holds the SPH water",
+   "visual": "/home/ziga/projects/yam-arcade/assets/sam3d/pitcher/visual_lo.obj",
+   "bbox": [
+    0.261,
+    0.135,
+    0.25
+   ]
+  },
+  {
+   "logical_name": "mug",
+   "mesh": "/home/ziga/projects/yam-arcade/assets/sam3d/mug/collision_hollow.obj",
+   "file_meshes_are_zup": true,
+   "simulation_role": "ceramic coffee mug collision container, handle +x",
+   "visual": "/home/ziga/projects/yam-arcade/assets/sam3d/mug/visual_lo.obj",
+   "bbox": [
+    0.1292,
+    0.0925,
+    0.0951
+   ]
+  },
+  {
+   "logical_name": "tumbler",
+   "mesh": "/home/ziga/projects/yam-arcade/assets/sam3d/tumbler/collision_hollow.obj",
+   "file_meshes_are_zup": true,
+   "simulation_role": "tall drinking glass collision container",
+   "visual": "/home/ziga/projects/yam-arcade/assets/sam3d/tumbler/visual_lo.obj",
+   "bbox": [
+    0.0938,
+    0.0936,
+    0.1401
+   ]
+  },
+  {
+   "logical_name": "teacup",
+   "mesh": "/home/ziga/projects/yam-arcade/assets/sam3d/teacup/collision_hollow.obj",
+   "file_meshes_are_zup": true,
+   "simulation_role": "wide porcelain teacup collision container, handle +x",
+   "visual": "/home/ziga/projects/yam-arcade/assets/sam3d/teacup/visual_lo.obj",
+   "bbox": [
+    0.1117,
+    0.094,
+    0.0651
+   ]
+  }
+ ],
+ "notes": "Meshes from SAM 3D (see ~/projects/yam-arcade/assets/sam3d/INDEX.md). Z-up, metres, base at z = 0."
+}

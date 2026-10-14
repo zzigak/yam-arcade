@@ -1,0 +1,89 @@
+{
+ "name": "wineglass",
+ "source_raw": "wineglass_s7.glb",
+ "seed": 7,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y",
+ "target": {
+  "dim": "height",
+  "size_m": 0.15,
+  "why": "small stemmed (sherry / small wine) glass, 15 cm tall"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.06,
+ "yaw_applied_deg": 0.0,
+ "scale_from_sam3d_units": 0.15015,
+ "y_rescale": null,
+ "bbox_m": [
+  0.0704,
+  0.0694,
+  0.15
+ ],
+ "visual_faces": 200000,
+ "visual_lo_faces": 40000,
+ "visual_watertight": true,
+ "visual_volume_m3": 3.9660125990287935e-05,
+ "raw_faces": 289108,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 4000,
+  "watertight": true,
+  "volume_m3": 5.809704590996034e-05,
+  "bbox_m": [
+   0.0677,
+   0.0662,
+   0.1493
+  ],
+  "wall_m": 0.003,
+  "voxel_m": 0.0006,
+  "mode": "respect",
+  "sam3d_cavity_frac_of_envelope": 0.662,
+  "floor_top_z_m": 0.075,
+  "cavity_center_xy_m": [
+   0.0001,
+   0.0001
+  ],
+  "fill_level_z_m": 0.15
+ },
+ "capacity_l": 0.093,
+ "source_image": {
+  "title": "Glass",
+  "creator": "olga.reznik",
+  "license": "BY 2.0",
+  "page": "https://www.flickr.com/photos/55247565@N05/6058691104",
+  "file": "https://live.staticflickr.com/6190/6058691104_2b7cd0c946.jpg",
+  "provider": "flickr",
+  "local": "_src/ov/tumbler/full13.jpg"
+ },
+ "input_png": "_work/inputs/wineglass.png (mask: _work/inputs/wineglass_mask.png)",
+ "verdict": "good",
+ "notes": "small stemmed glass (sherry / small wine); bowl ~5.5 cm across, floor of the bowl at 7.7 cm, solid stem and foot. Glass is rendered opaque grey.",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.0704,
+   0.0695,
+   0.1501
+  ],
+  "visual_min_z_m": -0.0,
+  "visual_center_xy_m": [
+   1e-05,
+   -2e-05
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 2,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0768,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   2.69,
+   3.17
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -2.7,
+   -3.3,
+   -0.8
+  ]
+ }
+}

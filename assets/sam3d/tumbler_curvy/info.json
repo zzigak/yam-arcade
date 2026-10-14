@@ -1,0 +1,89 @@
+{
+ "name": "tumbler_curvy",
+ "source_raw": "tumbler_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y",
+ "target": {
+  "dim": "height",
+  "size_m": 0.14,
+  "why": "tall drinking glass (pint/highball class), 14 cm tall (task spec)"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.02,
+ "yaw_applied_deg": 0.0,
+ "scale_from_sam3d_units": 0.13995,
+ "y_rescale": null,
+ "bbox_m": [
+  0.0842,
+  0.0861,
+  0.1401
+ ],
+ "visual_faces": 199998,
+ "visual_lo_faces": 40000,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 651412,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 4000,
+  "watertight": true,
+  "volume_m3": 0.00011574138308893182,
+  "bbox_m": [
+   0.084,
+   0.086,
+   0.1392
+  ],
+  "wall_m": 0.003,
+  "voxel_m": 0.0007,
+  "mode": "respect",
+  "sam3d_cavity_frac_of_envelope": 0.827,
+  "floor_top_z_m": 0.0077,
+  "cavity_center_xy_m": [
+   0.0,
+   0.0
+  ],
+  "fill_level_z_m": 0.14
+ },
+ "capacity_l": 0.49,
+ "source_image": {
+  "title": "Empty Pint",
+  "creator": "Neil T",
+  "license": "BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/41894148532@N01/4291434",
+  "file": "https://live.staticflickr.com/4/4291434_7604b1b928_b.jpg",
+  "provider": "flickr",
+  "local": "_src/ov/tumbler2/full03.jpg"
+ },
+ "input_png": "_work/inputs/tumbler.png (mask: _work/inputs/tumbler_mask.png)",
+ "verdict": "good",
+ "notes": "alternate tall glass with a Coca-Cola-style waist; some smudges baked into the colours.",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.0842,
+   0.0862,
+   0.1403
+  ],
+  "visual_min_z_m": -3e-05,
+  "visual_center_xy_m": [
+   -2e-05,
+   0.0
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 2,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0091,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   2.75,
+   3.15
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -0.2,
+   -0.1,
+   -1.1
+  ]
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "station": "jars",
+ "fps": 30,
+ "n_frames": 254,
+ "objects": {
+  "jar_spice": {
+   "kind": "rigid",
+   "mesh": "meshes/spice_jar_vis.obj",
+   "material": {
+    "kind": "glass",
+    "color": [
+     0.94,
+     0.97,
+     0.98
+    ],
+    "roughness": 0.02
+   },
+   "scale": 1.0
+  },
+  "lid_spice": {
+   "kind": "rigid",
+   "mesh": "meshes/spice_lid_vis.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.78,
+     0.1,
+     0.08
+    ],
+    "roughness": 0.35
+   },
+   "scale": 1.0
+  },
+  "jar_jam": {
+   "kind": "rigid",
+   "mesh": "meshes/jam_jar_vis.obj",
+   "material": {
+    "kind": "glass",
+    "color": [
+     0.94,
+     0.97,
+     0.98
+    ],
+    "roughness": 0.02
+   },
+   "scale": 1.0
+  },
+  "lid_jam": {
+   "kind": "rigid",
+   "mesh": "meshes/jam_lid_vis.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.83,
+     0.66,
+     0.3
+    ],
+    "roughness": 0.25
+   },
+   "scale": 1.0
+  },
+  "jar_mason": {
+   "kind": "rigid",
+   "mesh": "meshes/mason_jar_vis.obj",
+   "material": {
+    "kind": "glass",
+    "color": [
+     0.94,
+     0.97,
+     0.98
+    ],
+    "roughness": 0.02
+   },
+   "scale": 1.0
+  },
+  "lid_mason": {
+   "kind": "rigid",
+   "mesh": "meshes/mason_lid_vis.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.74,
+     0.75,
+     0.77
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  }
+ },
+ "part": "twist_test",
+ "dt": 0.0033333333333333335,
+ "d_hat": 0.0002,
+ "drive": "FEASIBILITY TEST: an external torque about each jar axis is applied to the lid (libuipc AffineBodyExternalBodyForce), from a torque-limited angle servo; no force, no position/velocity is ever set. Phases: rest 0.6 s, tighten 2.8 s, hold 0.6 s, unscrew <= 5.0 s, until 1.4 turns back s, release 0.8 s",
+ "omega_rad_s": 3.141592653589793,
+ "tau_max_close_Nm": {
+  "spice": 0.004,
+  "jam": 0.01,
+  "mason": 0.02
+ },
+ "tau_max_open_Nm": {
+  "spice": 0.006,
+  "jam": 0.015,
+  "mason": 0.03
+ },
+ "frame_check_max_vertex_error_m": {
+  "jar_spice": 8.419491548394831e-08,
+  "lid_spice": 6.611459518746088e-09,
+  "jar_jam": 7.965856452241127e-08,
+  "lid_jam": 2.2635490287692406e-08,
+  "jar_mason": 1.3693592038066527e-07,
+  "lid_mason": 2.7869431429294877e-08
+ },
+ "camera": {
+  "eye": [
+   0.3,
+   0.62,
+   1.0
+  ],
+  "target": [
+   0.0,
+   -0.07,
+   0.82
+  ],
+  "lens": 50
+ },
+ "table": {
+  "top": "white"
+ }
+}

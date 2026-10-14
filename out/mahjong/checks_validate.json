@@ -1,0 +1,237 @@
+{
+ "checks": {
+  "settle_drift_1s_to_6s_mm": {
+   "value": 4.311327295900167e-07,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "settle_rotation_1s_to_6s_deg": {
+   "value": 1.7075472925031877e-06,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "settle_max_speed_last_1s_mm_s": {
+   "value": 8.622965960232308e-08,
+   "limit": "<= 0.1",
+   "ok": true
+  },
+  "settle_total_motion_mm": {
+   "value": 0.23587451763262599,
+   "limit": "<= 0.3 (0.1 mm spawn gap, 0.2 for stacks)",
+   "ok": true
+  },
+  "settle_solver_penetration_first_1s_mm": {
+   "value": 0.026242983945050223,
+   "limit": "<= 0.1 (landing from the spawn gap)",
+   "ok": true
+  },
+  "settle_rest_height_error_mm": {
+   "value": 0.034500411467464076,
+   "limit": "<= 0.1 (on table / on the tile below)",
+   "ok": true
+  },
+  "settle_solver_penetration_mm": {
+   "value": 0.014796532232541106,
+   "limit": "<= 0.05 (t >= 1 s)",
+   "ok": true
+  },
+  "settle_box_overlap_tile-tile_mm": {
+   "value": 0.0081,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "settle_box_overlap_tile-table_mm": {
+   "value": 0.0296,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "settle_box_overlap_tile-rack_mm": {
+   "value": -61.8224,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "settle_box_overlap_rack-table_mm": {
+   "value": 0.0141,
+   "limit": "<= 0.05 (independent SAT test on the final poses; < 0 = gap)",
+   "ok": true
+  },
+  "scattered_success_is_false": {
+   "value": false,
+   "limit": "False (nothing in the rack yet)",
+   "ok": true
+  }
+ },
+ "info": {
+  "scattered": {
+   "layout": "scattered",
+   "drift_mm": 4.311327295900167e-07,
+   "rot_deg": 1.7075472925031877e-06,
+   "rack_drift_mm": 3.4694469519536465e-11,
+   "vmax_last1s_mm_s": 8.622965960232308e-08,
+   "pen_max_mm": 0.014796532232541106,
+   "pen_first_1s_mm": 0.026242983945050223,
+   "disp_total_max_mm": 0.23587451763262599,
+   "overlaps_mm": {
+    "tile-tile": 0.0081,
+    "tile-table": 0.0296,
+    "tile-rack": -61.8224,
+    "rack-table": 0.0141
+   },
+   "overlap_worst_pairs": {
+    "rack-table": [
+     "table",
+     "rack"
+    ],
+    "tile-table": [
+     "table",
+     "tile_10_3m"
+    ],
+    "tile-rack": [
+     "rack",
+     "tile_08_7z"
+    ],
+    "tile-tile": [
+     "tile_10_3m",
+     "tile_11_6p"
+    ]
+   },
+   "success": false,
+   "n_correct": 0,
+   "slots": [
+    {
+     "slot": 0,
+     "want": "1m",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 1,
+     "want": "2m",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 2,
+     "want": "3m",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 3,
+     "want": "4p",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 4,
+     "want": "5p",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 5,
+     "want": "6p",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 6,
+     "want": "7s",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 7,
+     "want": "8s",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 8,
+     "want": "9s",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 9,
+     "want": "1z",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 10,
+     "want": "1z",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 11,
+     "want": "1z",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 12,
+     "want": "7z",
+     "have": [],
+     "ok": false
+    },
+    {
+     "slot": 13,
+     "want": "7z",
+     "have": [],
+     "ok": false
+    }
+   ],
+   "tile_z": [
+    0.760486337931997,
+    0.760486337931997,
+    0.760486337931997,
+    0.7604726805429782,
+    0.7814657322904598,
+    0.760486337931997,
+    0.760486337931997,
+    0.760486337931997,
+    0.760486337931997,
+    0.760486337931997,
+    0.7604726805612916,
+    0.7814654995885325,
+    0.760486337931997,
+    0.760486337931997
+   ],
+   "tile_names": [
+    "tile_00_4p",
+    "tile_01_7z",
+    "tile_02_9s",
+    "tile_03_7s",
+    "tile_04_8s",
+    "tile_05_1m",
+    "tile_06_5p",
+    "tile_07_2m",
+    "tile_08_7z",
+    "tile_09_1z",
+    "tile_10_3m",
+    "tile_11_6p",
+    "tile_12_1z",
+    "tile_13_1z"
+   ],
+   "tile_notes": [
+    "face up",
+    "face down",
+    "face up",
+    "face up",
+    "stacked, face down",
+    "face down",
+    "face up",
+    "face up",
+    "face up",
+    "face down",
+    "face up",
+    "stacked, face up",
+    "face down",
+    "face up"
+   ]
+  },
+  "wall_scattered_s": 6.631683588027954
+ }
+}

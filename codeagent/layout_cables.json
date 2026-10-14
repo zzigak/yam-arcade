@@ -1,0 +1,17 @@
+{
+ "reusable_assets": [
+  {
+   "logical_name": "box",
+   "mesh": "/home/ziga/projects/yam-arcade/assets/sam3d/box/collision_hollow.obj",
+   "file_meshes_are_zup": true,
+   "simulation_role": "open-top cardboard box collision container for sorting cables (rescale if needed)",
+   "visual": "/home/ziga/projects/yam-arcade/assets/sam3d/box/visual_lo.obj",
+   "bbox": [
+    0.3201,
+    0.2609,
+    0.1566
+   ]
+  }
+ ],
+ "notes": "Meshes from SAM 3D (see ~/projects/yam-arcade/assets/sam3d/INDEX.md). Z-up, metres, base at z = 0."
+}

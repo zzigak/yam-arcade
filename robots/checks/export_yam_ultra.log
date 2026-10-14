@@ -1,0 +1,22 @@
+{
+ "n_objects": 25,
+ "n_frames": 34,
+ "max_link_pos_err": 2.675741709216335e-07,
+ "max_link_quat_err": 4.3976047803262475e-08,
+ "objects": [
+  "robot/cart/aluminium",
+  "robot/cart/camera",
+  "robot/cart/estop_red",
+  "robot/cart/graphite",
+  "robot/cart/rubber",
+  "robot/cart/top_plate",
+  "robot/cart/white_shell",
+  "robot/left_base"
+ ],
+ "base_q": [
+  0.05000000074505806,
+  9.999999747378752e-05,
+  0.04989999905228615
+ ],
+ "tilt": 0.0
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="jack35">
+  <link name="jack35">
+    <visual><geometry><mesh filename="jack35_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="jack35_hull.obj"/></geometry></collision>
+  </link>
+</robot>

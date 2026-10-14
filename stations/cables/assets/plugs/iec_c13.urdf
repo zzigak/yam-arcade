@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="iec_c13">
+  <link name="iec_c13">
+    <visual><geometry><mesh filename="iec_c13_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="iec_c13_hull.obj"/></geometry></collision>
+  </link>
+</robot>

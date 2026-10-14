@@ -1,0 +1,24 @@
+{
+ "tip": [
+  0.047,
+  0.0,
+  0.0
+ ],
+ "boot": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "length": 0.047,
+ "volume": 9.279583333333333e-06,
+ "hull": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/hdmi_hull.obj",
+ "visual": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/hdmi_visual.obj",
+ "urdf": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/hdmi.urdf",
+ "width": 0.021,
+ "height": 0.011,
+ "mass": 0.012,
+ "body_x": [
+  0.0,
+  0.036
+ ]
+}

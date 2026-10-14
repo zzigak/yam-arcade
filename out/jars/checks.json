@@ -1,0 +1,440 @@
+{
+ "station": "jars",
+ "d_hat_m": 0.0002,
+ "settle": {
+  "initial_clearance_m": {
+   "value": 0.0004909515287739863,
+   "limit": "> d_hat = 0.0002",
+   "ok": true,
+   "pair": "lid_mason|table"
+  },
+  "no_interpenetration_min_dist_m": {
+   "value": 0.0001880427695112319,
+   "limit": ">= 0",
+   "ok": true,
+   "pair": "jar_mason|table",
+   "t": 0.10000000149011612
+  },
+  "settled_drift_last_1s_m": {
+   "value": 2.3992768730732957e-12,
+   "limit": "< 5e-6",
+   "ok": true
+  },
+  "settled_max_step_motion_m": {
+   "value": 2.3992768730732957e-12,
+   "limit": "< 1e-6 per 3.3 ms step (no jitter)",
+   "ok": true
+  },
+  "settled_rotation_last_1s_deg": {
+   "value": 1.7075472925031877e-06,
+   "limit": "< 0.01",
+   "ok": true
+  },
+  "resting_gap_to_table_m": {
+   "value": [
+    0.0001880427695112319,
+    0.0001968975363050296
+   ],
+   "limit": "0 < gap <= d_hat = 0.0002",
+   "ok": true,
+   "per_body": {
+    "jar_spice": 0.0001919196610142837,
+    "lid_spice": 0.0001968975363050296,
+    "jar_jam": 0.00019001017223940764,
+    "lid_jam": 0.00019594422887492247,
+    "jar_mason": 0.0001880427695112319,
+    "lid_mason": 0.00019530807025414099
+   }
+  }
+ },
+ "twist_test": {
+  "initial_clearance_m": {
+   "value": 0.0004892528168062807,
+   "limit": "> d_hat = 0.0002",
+   "ok": true,
+   "pair": "jar_mason|lid_mason"
+  },
+  "no_interpenetration_min_dist_m": {
+   "value": 0.00017871560736467445,
+   "limit": ">= 0",
+   "ok": true,
+   "pair": "jar_jam|lid_jam",
+   "t": 5.300000190734863
+  },
+  "per_jar": {
+   "spice": {
+    "rest_height_above_seat_m": {
+     "value": 0.0034279463313072606,
+     "limit": "~ 1 pitch (0.00320) above the seat: [0.9, 1.15] P",
+     "ok": true
+    },
+    "rest_drift_last_0.3s_m": {
+     "value": 6.873226154890943e-10,
+     "limit": "< 1e-6 (rests, does not sink or snap on)",
+     "ok": true
+    },
+    "rest_tilt_deg": {
+     "value": 0.004490901239578411,
+     "limit": "< 0.5 (sits level on > half a turn of thread)",
+     "ok": true
+    },
+    "descent_per_turn_m": {
+     "value": 0.003191786438010684,
+     "limit": "pitch 0.00320 +- 2%",
+     "ok": true,
+     "rel_error": -0.002566738121661305,
+     "fit_window_turns": [
+      0.10132595040992401,
+      0.7608120335131918
+     ],
+     "max_fit_residual_m": 3.3165218382594057e-06
+    },
+    "seated_height_above_rim_m": {
+     "value": 0.00019602561216021386,
+     "limit": "0 < h < 0.5e-3 (seat contact gap ~ d_hat 0.0002)",
+     "ok": true
+    },
+    "seated_coaxial_offset_m": {
+     "value": 2.1616376898976207e-06,
+     "limit": "< 0.2e-3",
+     "ok": true
+    },
+    "seated_tilt_deg": {
+     "value": 0.00018657835678332352,
+     "limit": "< 0.5",
+     "ok": true
+    },
+    "seated_hold_drift_m": {
+     "value": 6.01881931378001e-08,
+     "limit": "< 2e-6",
+     "ok": true
+    },
+    "engaged_turns_to_seat": {
+     "value": 1.1174751109794552,
+     "limit": ">= 0.9",
+     "ok": true
+    },
+    "rise_per_turn_unscrewing_m": {
+     "value": 0.0031897892029716414,
+     "limit": "pitch 0.00320 +- 2%",
+     "ok": true,
+     "rel_error": -0.003190874071362093
+    },
+    "unscrewed_rise_m": {
+     "value": 0.0037960555469600393,
+     "limit": ">= 1 pitch (0.00320)",
+     "ok": true
+    },
+    "jar_rotation_deg": {
+     "value": 0.05390496810053057,
+     "limit": "< 0.5",
+     "ok": true
+    },
+    "jar_slide_m": {
+     "value": 5.4049217393228094e-08,
+     "limit": "< 1e-4",
+     "ok": true
+    },
+    "max_drive_torque_Nm": {
+     "value": 0.004504177161758815,
+     "note": "disclosed external torque about the jar axis"
+    }
+   },
+   "jam": {
+    "rest_height_above_seat_m": {
+     "value": 0.0038277242962066055,
+     "limit": "~ 1 pitch (0.00360) above the seat: [0.9, 1.15] P",
+     "ok": true
+    },
+    "rest_drift_last_0.3s_m": {
+     "value": 5.9597091581209405e-08,
+     "limit": "< 1e-6 (rests, does not sink or snap on)",
+     "ok": true
+    },
+    "rest_tilt_deg": {
+     "value": 0.0008424604694788513,
+     "limit": "< 0.5 (sits level on > half a turn of thread)",
+     "ok": true
+    },
+    "descent_per_turn_m": {
+     "value": 0.00359970154090966,
+     "limit": "pitch 0.00360 +- 2%",
+     "ok": true,
+     "rel_error": -8.290530287236031e-05,
+     "fit_window_turns": [
+      0.1017518000545341,
+      0.7581851852973498
+     ],
+     "max_fit_residual_m": 3.6622809481199996e-06
+    },
+    "seated_height_above_rim_m": {
+     "value": 0.00019595521338884592,
+     "limit": "0 < h < 0.5e-3 (seat contact gap ~ d_hat 0.0002)",
+     "ok": true
+    },
+    "seated_coaxial_offset_m": {
+     "value": 2.7523134003433845e-05,
+     "limit": "< 0.2e-3",
+     "ok": true
+    },
+    "seated_tilt_deg": {
+     "value": 0.0021563673957500744,
+     "limit": "< 0.5",
+     "ok": true
+    },
+    "seated_hold_drift_m": {
+     "value": 5.816866705116164e-07,
+     "limit": "< 2e-6",
+     "ok": true
+    },
+    "engaged_turns_to_seat": {
+     "value": 1.1024834656416596,
+     "limit": ">= 0.9",
+     "ok": true
+    },
+    "rise_per_turn_unscrewing_m": {
+     "value": 0.0035962168739249426,
+     "limit": "pitch 0.00360 +- 2%",
+     "ok": true,
+     "rel_error": -0.0010508683541826658
+    },
+    "unscrewed_rise_m": {
+     "value": 0.004276945648191199,
+     "limit": ">= 1 pitch (0.00360)",
+     "ok": true
+    },
+    "jar_rotation_deg": {
+     "value": 0.0997750863390212,
+     "limit": "< 0.5",
+     "ok": true
+    },
+    "jar_slide_m": {
+     "value": 7.597739021377599e-07,
+     "limit": "< 1e-4",
+     "ok": true
+    },
+    "max_drive_torque_Nm": {
+     "value": 0.015000000000000006,
+     "note": "disclosed external torque about the jar axis"
+    }
+   },
+   "mason": {
+    "rest_height_above_seat_m": {
+     "value": 0.004459602217264214,
+     "limit": "~ 1 pitch (0.00423) above the seat: [0.9, 1.15] P",
+     "ok": true
+    },
+    "rest_drift_last_0.3s_m": {
+     "value": 1.4342928789101705e-09,
+     "limit": "< 1e-6 (rests, does not sink or snap on)",
+     "ok": true
+    },
+    "rest_tilt_deg": {
+     "value": 0.002407247915432357,
+     "limit": "< 0.5 (sits level on > half a turn of thread)",
+     "ok": true
+    },
+    "descent_per_turn_m": {
+     "value": 0.00422887201438193,
+     "limit": "pitch 0.00423 +- 2%",
+     "ok": true,
+     "rel_error": -0.00026666326668323137,
+     "fit_window_turns": [
+      0.10250019629025495,
+      0.7583510881238629
+     ],
+     "max_fit_residual_m": 4.516854090169664e-06
+    },
+    "seated_height_above_rim_m": {
+     "value": 0.00019494666476718714,
+     "limit": "0 < h < 0.5e-3 (seat contact gap ~ d_hat 0.0002)",
+     "ok": true
+    },
+    "seated_coaxial_offset_m": {
+     "value": 9.86260959205957e-07,
+     "limit": "< 0.2e-3",
+     "ok": true
+    },
+    "seated_tilt_deg": {
+     "value": 0.0013465688609285479,
+     "limit": "< 0.5",
+     "ok": true
+    },
+    "seated_hold_drift_m": {
+     "value": 3.424959179321174e-07,
+     "limit": "< 2e-6",
+     "ok": true
+    },
+    "engaged_turns_to_seat": {
+     "value": 1.088960148785487,
+     "limit": ">= 0.9",
+     "ok": true
+    },
+    "rise_per_turn_unscrewing_m": {
+     "value": 0.004225398523353975,
+     "limit": "pitch 0.00423 +- 2%",
+     "ok": true,
+     "rel_error": -0.0010878195380674693
+    },
+    "unscrewed_rise_m": {
+     "value": 0.004986121789986087,
+     "limit": ">= 1 pitch (0.00423)",
+     "ok": true
+    },
+    "jar_rotation_deg": {
+     "value": 0.041112631803684234,
+     "limit": "< 0.5",
+     "ok": true
+    },
+    "jar_slide_m": {
+     "value": 4.7011991115456215e-07,
+     "limit": "< 1e-4",
+     "ok": true
+    },
+    "max_drive_torque_Nm": {
+     "value": 0.029999999999997255,
+     "note": "disclosed external torque about the jar axis"
+    }
+   }
+  }
+ },
+ "robot": {
+  "frame0_min_clearance_m": {
+   "value": 0.00018870705950380096,
+   "limit": ">= 0 (start placement checked in settle/initial_clearance_m)",
+   "ok": true,
+   "pair": "jar_mason|table"
+  },
+  "no_interpenetration_min_dist_m": {
+   "value": 0.0001788327767348119,
+   "limit": ">= 0 (every 3rd frame)",
+   "ok": true,
+   "pair": "jar_spice|lid_spice",
+   "t": 50.099998474121094
+  },
+  "drawn_pad_min_signed_dist_m": {
+   "value": 9.372262655005844e-05,
+   "limit": ">= -0.05e-3 (drawn collision pads never inside a part)",
+   "ok": true,
+   "pair": "robot/right_tip_left|lid_mason",
+   "t": 17.700000762939453
+  },
+  "robot_parts_not_in_table_top_m": {
+   "value": 0.0,
+   "limit": ">= -0.5e-3 (depth of any drawn robot vertex inside the table-top slab)",
+   "ok": true,
+   "part": null,
+   "t": null
+  },
+  "fingertip_genesis_vs_libuipc_offset_m": {
+   "value": 0.003604524769423994,
+   "p95": 0.002901841432402567,
+   "note": "fingertips are drawn at their libuipc (contact) poses; this is how far Genesis's own fingertip links are from them (shows as finger play in the mount)"
+  },
+  "spice_lid_screwed_on": {
+   "value": {
+    "ok": true,
+    "offset_xy_mm": 0.005945856654217011,
+    "tilt_deg": 0.0004250043705579855,
+    "height_above_rim_mm": 0.1861898297018244,
+    "engaged_turns": 1.1236028127312345
+   },
+   "limit": "coaxial < 1.5 mm, tilt < 3 deg, seat gap in [-0.2, 0.6] mm, >= 0.9 turn",
+   "ok": true
+  },
+  "jam_lid_screwed_on": {
+   "value": {
+    "ok": true,
+    "offset_xy_mm": 0.006424310178191337,
+    "tilt_deg": 0.0007707055894250512,
+    "height_above_rim_mm": 0.18741949590468654,
+    "engaged_turns": 1.109377482327511
+   },
+   "limit": "coaxial < 1.5 mm, tilt < 3 deg, seat gap in [-0.2, 0.6] mm, >= 0.9 turn",
+   "ok": true
+  },
+  "mason_lid_screwed_on": {
+   "value": {
+    "ok": true,
+    "offset_xy_mm": 0.012087195966980449,
+    "tilt_deg": 0.00029605886125270146,
+    "height_above_rim_mm": 0.18593752906387317,
+    "engaged_turns": 1.0932343937298257
+   },
+   "limit": "coaxial < 1.5 mm, tilt < 3 deg, seat gap in [-0.2, 0.6] mm, >= 0.9 turn",
+   "ok": true
+  },
+  "all_lids_on": {
+   "value": true,
+   "limit": "true",
+   "ok": true
+  }
+ },
+ "geometry": {
+  "spice": {
+   "screw_path_clearance_mm": {
+    "value": [
+     0.34581349262707844,
+     0.3460322424842648
+    ],
+    "limit": "== designed flank gap 0.346 mm +- 0.01 over 0..1.375 turns",
+    "ok": true
+   },
+   "wrong_hand_collides_mm": {
+    "value": -0.5006234921044589,
+    "limit": "< 0 (threads interlock only right-handed)",
+    "ok": true
+   },
+   "watertight": {
+    "value": true,
+    "limit": "jar and lid collision + visual meshes closed 2-manifolds, Euler 2",
+    "ok": true
+   }
+  },
+  "jam": {
+   "screw_path_clearance_mm": {
+    "value": [
+     0.3445694547417467,
+     0.34458442836676584
+    ],
+    "limit": "== designed flank gap 0.346 mm +- 0.01 over 0..1.375 turns",
+    "ok": true
+   },
+   "wrong_hand_collides_mm": {
+    "value": -0.6945210911554189,
+    "limit": "< 0 (threads interlock only right-handed)",
+    "ok": true
+   },
+   "watertight": {
+    "value": true,
+    "limit": "jar and lid collision + visual meshes closed 2-manifolds, Euler 2",
+    "ok": true
+   }
+  },
+  "mason": {
+   "screw_path_clearance_mm": {
+    "value": [
+     0.3427671283590375,
+     0.3429532685281035
+    ],
+    "limit": "== designed flank gap 0.346 mm +- 0.01 over 0..1.375 turns",
+    "ok": true
+   },
+   "wrong_hand_collides_mm": {
+    "value": -0.8825121166786433,
+    "limit": "< 0 (threads interlock only right-handed)",
+    "ok": true
+   },
+   "watertight": {
+    "value": true,
+    "limit": "jar and lid collision + visual meshes closed 2-manifolds, Euler 2",
+    "ok": true
+   }
+  }
+ },
+ "summary": {
+  "n_checks": 64,
+  "n_pass": 64,
+  "failed": []
+ }
+}

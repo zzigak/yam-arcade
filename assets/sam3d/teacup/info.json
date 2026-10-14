@@ -1,0 +1,89 @@
+{
+ "name": "teacup",
+ "source_raw": "teacup_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y, handle along +x",
+ "target": {
+  "dim": "height",
+  "size_m": 0.065,
+  "why": "porcelain teacup: 6-7 cm tall, ~9 cm rim; 6.5 cm chosen"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.12,
+ "yaw_applied_deg": -90.1,
+ "scale_from_sam3d_units": 0.11186,
+ "y_rescale": null,
+ "bbox_m": [
+  0.1117,
+  0.094,
+  0.0651
+ ],
+ "visual_faces": 199998,
+ "visual_lo_faces": 39998,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 615504,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 4000,
+  "watertight": true,
+  "volume_m3": 5.9159267253274524e-05,
+  "bbox_m": [
+   0.1108,
+   0.0929,
+   0.0639
+  ],
+  "wall_m": 0.003,
+  "voxel_m": 0.0006,
+  "mode": "respect",
+  "sam3d_cavity_frac_of_envelope": 0.847,
+  "floor_top_z_m": 0.003,
+  "cavity_center_xy_m": [
+   -0.0106,
+   0.0002
+  ],
+  "fill_level_z_m": 0.0636
+ },
+ "capacity_l": 0.278,
+ "source_image": {
+  "title": "'Bamboo' Motif Teacup Saucer Christopher",
+  "creator": "",
+  "license": "CC0 1.0",
+  "page": "https://www.rawpixel.com/image/11797921/bamboo-motif-teacup-and-saucer-christopher-dresser-and-mintons-ltd",
+  "file": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2xhY21hMTg0NDc3LWltYWdlLmpwZw.jpg",
+  "provider": "rawpixel",
+  "local": "_src/ov/teacup/full15.jpg"
+ },
+ "input_png": "_work/inputs/teacup.png (mask: _work/inputs/teacup_mask.png)",
+ "verdict": "very good",
+ "notes": "wide low porcelain teacup (Dresser/Minton bamboo pattern), angular handle; saucer not included.",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.1117,
+   0.0941,
+   0.0654
+  ],
+  "visual_min_z_m": -0.00033,
+  "visual_center_xy_m": [
+   1e-05,
+   1e-05
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 0,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0036,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   2.74,
+   3.03
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -0.9,
+   -1.1,
+   -1.5
+  ]
+ }
+}

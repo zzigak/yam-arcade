@@ -1,0 +1,99 @@
+{
+ "name": "pitcher_glass",
+ "source_raw": "pitcher_glass_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y, handle along +x",
+ "target": {
+  "dim": "height",
+  "size_m": 0.18,
+  "why": "bulbous glass water jug; 18 cm tall keeps the brimful capacity near 2 L"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.3,
+ "yaw_applied_deg": -91.2,
+ "scale_from_sam3d_units": 0.2232,
+ "y_rescale": null,
+ "bbox_m": [
+  0.2224,
+  0.177,
+  0.18
+ ],
+ "visual_faces": 200000,
+ "visual_lo_faces": 40000,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 909584,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 6000,
+  "watertight": true,
+  "volume_m3": 0.0006847573444800572,
+  "bbox_m": [
+   0.2221,
+   0.177,
+   0.18
+  ],
+  "wall_m": 0.003,
+  "voxel_m": 0.001,
+  "mode": "respect",
+  "sam3d_cavity_frac_of_envelope": 0.809,
+  "floor_top_z_m": 0.008,
+  "cavity_center_xy_m": [
+   -0.0198,
+   -0.0001
+  ],
+  "fill_level_z_m": 0.175
+ },
+ "capacity_l": 2.666,
+ "source_image": {
+  "title": "Water Pitcher LACMA M.2004.176.1",
+  "creator": "F\u00e6",
+  "license": "PDM 1.0",
+  "page": "https://www.flickr.com/photos/50398299@N08/15829809684",
+  "file": "https://live.staticflickr.com/7355/15829809684_63150d0a00_b.jpg",
+  "provider": "flickr",
+  "local": "_src/ov/pitcher3/full05.jpg"
+ },
+ "input_png": "_work/inputs/pitcher_glass.png (mask: _work/inputs/pitcher_glass_mask.png)",
+ "verdict": "good (alternate pourer)",
+ "notes": "round glass water jug with a pouring lip at -x and an open top (no lid); museum piece (LACMA), glass rendered opaque grey. Handle +x.",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.2225,
+   0.177,
+   0.18
+  ],
+  "visual_min_z_m": -0.0,
+  "visual_center_xy_m": [
+   0.0,
+   -2e-05
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 0,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.008,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   5.79,
+   6.35
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -0.4,
+   0.0,
+   -0.0
+  ],
+  "spout_tip_m": [
+   -0.0922,
+   0.0016,
+   0.1729
+  ],
+  "handle_outer_x_m": 0.1112,
+  "handle_z_range_m": [
+   0.0605,
+   0.1788
+  ]
+ }
+}

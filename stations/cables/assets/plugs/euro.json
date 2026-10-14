@@ -1,0 +1,24 @@
+{
+ "tip": [
+  0.04,
+  0.0,
+  0.0
+ ],
+ "boot": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "length": 0.04,
+ "volume": 1.6033333333333335e-05,
+ "hull": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/euro_hull.obj",
+ "visual": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/euro_visual.obj",
+ "urdf": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/euro.urdf",
+ "width": 0.024,
+ "height": 0.018,
+ "mass": 0.025,
+ "body_x": [
+  0.0,
+  0.04
+ ]
+}

@@ -1,0 +1,8 @@
+newmtl tile_4s
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.05 0.05 0.05
+Ns 40
+d 1
+illum 2
+map_Kd tile_4s.png

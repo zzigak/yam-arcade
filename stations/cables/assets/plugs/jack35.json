@@ -1,0 +1,24 @@
+{
+ "tip": [
+  0.04,
+  0.0,
+  0.0
+ ],
+ "boot": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "length": 0.04,
+ "volume": 1.7815325317666819e-06,
+ "hull": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/jack35_hull.obj",
+ "visual": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/jack35_visual.obj",
+ "urdf": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/jack35.urdf",
+ "width": 0.008,
+ "height": 0.008000000000000002,
+ "mass": 0.003,
+ "body_x": [
+  0.0,
+  0.026
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "name": "tumbler",
+ "source_raw": "tumbler_b_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y",
+ "target": {
+  "dim": "height",
+  "size_m": 0.14,
+  "why": "conical drinking glass, 14 cm tall"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.13,
+ "yaw_applied_deg": 0.0,
+ "scale_from_sam3d_units": 0.13986,
+ "y_rescale": null,
+ "bbox_m": [
+  0.0938,
+  0.0936,
+  0.1401
+ ],
+ "visual_faces": 199998,
+ "visual_lo_faces": 39998,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 706048,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 4000,
+  "watertight": true,
+  "volume_m3": 0.00012289814590093898,
+  "bbox_m": [
+   0.0927,
+   0.0928,
+   0.1393
+  ],
+  "wall_m": 0.003,
+  "voxel_m": 0.0007,
+  "mode": "respect",
+  "sam3d_cavity_frac_of_envelope": 0.839,
+  "floor_top_z_m": 0.0084,
+  "cavity_center_xy_m": [
+   -0.0002,
+   -0.0005
+  ],
+  "fill_level_z_m": 0.14
+ },
+ "capacity_l": 0.55,
+ "source_image": {
+  "title": "Cracked glass",
+  "creator": "thedailyenglishshow",
+  "license": "BY 2.0",
+  "page": "https://www.flickr.com/photos/61904084@N00/7175035520",
+  "file": "https://live.staticflickr.com/5464/7175035520_445348531d_b.jpg",
+  "provider": "flickr",
+  "local": "_src/ov/tumbler/full12.jpg"
+ },
+ "input_png": "_work/inputs/tumbler_b.png (mask: _work/inputs/tumbler_b_mask.png)",
+ "verdict": "very good",
+ "notes": "straight conical pint-style glass (photo shows a faint crack line in the texture).",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.0938,
+   0.0936,
+   0.1405
+  ],
+  "visual_min_z_m": -0.00031,
+  "visual_center_xy_m": [
+   -3e-05,
+   -4e-05
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 2,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0097,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   2.75,
+   3.14
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -1.1,
+   -0.8,
+   -1.2
+  ]
+ }
+}

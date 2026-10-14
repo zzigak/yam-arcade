@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="usbc">
+  <link name="usbc">
+    <visual><geometry><mesh filename="usbc_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="usbc_hull.obj"/></geometry></collision>
+  </link>
+</robot>

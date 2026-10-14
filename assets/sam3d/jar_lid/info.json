@@ -1,0 +1,51 @@
+{
+ "name": "jar_lid",
+ "source_raw": "jar_lid_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y",
+ "target": {
+  "dim": "length",
+  "size_m": 0.07,
+  "why": "regular-mouth mason jar band/lid: 70 mm outer diameter"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.11,
+ "yaw_applied_deg": 0.0,
+ "scale_from_sam3d_units": 0.07016,
+ "y_rescale": null,
+ "bbox_m": [
+  0.0682,
+  0.07,
+  0.0122
+ ],
+ "visual_faces": 199998,
+ "visual_lo_faces": 39998,
+ "visual_watertight": true,
+ "visual_volume_m3": 5.897519832597194e-06,
+ "raw_faces": 426928,
+ "raw_watertight": true,
+ "source_image": {
+  "title": "Bento #293: Mason jar bento - Mexican",
+  "creator": "goblinbox_(queen_of_ad_hoc_bento)",
+  "license": "BY 2.0",
+  "page": "https://www.flickr.com/photos/25977089@N00/7150219611",
+  "file": "https://live.staticflickr.com/7265/7150219611_cc2983f620_b.jpg",
+  "provider": "flickr",
+  "local": "_src/ov/jar3/full08.jpg"
+ },
+ "input_png": "_work/inputs/jar_lid.png (mask: _work/inputs/jar_lid_mask.png)",
+ "verdict": "good (reference)",
+ "notes": "metal mason-jar lid lying open side UP (as photographed); flip 180 deg about x to cap a jar. 1.2 cm tall, visual only.",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.0682,
+   0.07,
+   0.0123
+  ],
+  "visual_min_z_m": -8e-05,
+  "visual_center_xy_m": [
+   0.0,
+   -1e-05
+  ]
+ }
+}

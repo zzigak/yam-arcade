@@ -1,0 +1,24 @@
+{
+ "tip": [
+  0.024,
+  0.0,
+  0.0
+ ],
+ "boot": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "length": 0.024,
+ "volume": 1.412e-06,
+ "hull": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/micro_usb_hull.obj",
+ "visual": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/micro_usb_visual.obj",
+ "urdf": "/home/ziga/projects/yam-arcade/stations/cables/assets/plugs/micro_usb.urdf",
+ "width": 0.011,
+ "height": 0.006,
+ "mass": 0.0025,
+ "body_x": [
+  0.0,
+  0.018
+ ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="euro">
+  <link name="euro">
+    <visual><geometry><mesh filename="euro_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="euro_hull.obj"/></geometry></collision>
+  </link>
+</robot>

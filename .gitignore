@@ -1,0 +1,56 @@
+# --- environments, caches, locks
+.venvs/
+__pycache__/
+*.pyc
+locks/
+
+# --- another project that shares this directory (not part of the arcade)
+stations/shoelace/
+site/shoelace/
+out/shoelace/
+
+# --- scratch and logs
+**/scratch/
+**/_scratch/
+stations/cables_newton/logs/
+codeagent/suite.log
+
+# --- third-party checkout and generated robot models (see README: setup)
+assets/i2rt_upstream/
+assets/robots/export/
+assets/robots/meshes/
+assets/robots/*.xml
+
+# --- SAM 3D: keep the processed light meshes + scripts; full-res meshes go in the release
+assets/sam3d/_src/
+assets/sam3d/_work/*
+!assets/sam3d/_work/scripts/
+assets/sam3d/*/visual.obj
+assets/sam3d/*/visual.glb
+
+# --- generated station assets with absolute paths (rebuilt by the station scripts)
+stations/water/assets/export/
+stations/water/assets/*.xml
+
+# --- renders, page build output, viewer data (videos are release assets)
+render/frames/
+render/snap/
+site/media/
+site/src/
+site/index.html
+site/viewer/data/
+
+# --- station outputs: keep checks, results and stills; trajectories/meshes/videos are release assets
+out/_test/
+out/sc_smoke/
+out/**/*.npz
+out/**/*.mp4
+out/**/meshes/
+out/**/meshseq/
+out/**/raw*/
+out/**/frames/
+out/**/tests/
+out/**/run_log.json
+out/**/log.json
+out/**/*.log
+site/viewer/tools/shots/

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="micro_usb">
+  <link name="micro_usb">
+    <visual><geometry><mesh filename="micro_usb_visual.obj"/></geometry></visual>
+    <collision><geometry><mesh filename="micro_usb_hull.obj"/></geometry></collision>
+  </link>
+</robot>

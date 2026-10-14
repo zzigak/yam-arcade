@@ -1,0 +1,914 @@
+{
+ "station": "mahjong",
+ "fps": 30,
+ "n_frames": 1709,
+ "objects": {
+  "tile_00_4p": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_4p.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_4p.png"
+   },
+   "scale": 1.0
+  },
+  "tile_01_7z": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_7z.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_7z.png"
+   },
+   "scale": 1.0
+  },
+  "tile_02_9s": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_9s.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_9s.png"
+   },
+   "scale": 1.0
+  },
+  "tile_03_7s": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_7s.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_7s.png"
+   },
+   "scale": 1.0
+  },
+  "tile_04_8s": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_8s.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_8s.png"
+   },
+   "scale": 1.0
+  },
+  "tile_05_1m": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_1m.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_1m.png"
+   },
+   "scale": 1.0
+  },
+  "tile_06_5p": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_5p.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_5p.png"
+   },
+   "scale": 1.0
+  },
+  "tile_07_2m": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_2m.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_2m.png"
+   },
+   "scale": 1.0
+  },
+  "tile_08_7z": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_7z.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_7z.png"
+   },
+   "scale": 1.0
+  },
+  "tile_09_1z": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_1z.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_1z.png"
+   },
+   "scale": 1.0
+  },
+  "tile_10_3m": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_3m.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_3m.png"
+   },
+   "scale": 1.0
+  },
+  "tile_11_6p": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_6p.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_6p.png"
+   },
+   "scale": 1.0
+  },
+  "tile_12_1z": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_1z.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_1z.png"
+   },
+   "scale": 1.0
+  },
+  "tile_13_1z": {
+   "kind": "rigid",
+   "mesh": "meshes/tile_1z.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.955,
+     0.937,
+     0.88
+    ],
+    "roughness": 0.25,
+    "texture": "meshes/tile_1z.png"
+   },
+   "scale": 1.0
+  },
+  "rack": {
+   "kind": "rigid",
+   "mesh": "meshes/rack.obj",
+   "material": {
+    "kind": "wood",
+    "color": [
+     0.6,
+     0.4,
+     0.24
+    ],
+    "roughness": 0.55,
+    "texture": "meshes/rack_wood.png"
+   },
+   "scale": 1.0
+  },
+  "robot/cart/aluminium": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__cart__aluminium.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.78,
+     0.79,
+     0.8
+    ],
+    "roughness": 0.35
+   },
+   "scale": 1.0
+  },
+  "robot/cart/camera": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__cart__camera.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.12,
+     0.12,
+     0.13
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "robot/cart/estop_red": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__cart__estop_red.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.8,
+     0.08,
+     0.06
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/cart/graphite": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__cart__graphite.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.2,
+     0.2,
+     0.22
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/cart/rubber": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__cart__rubber.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.03,
+     0.03,
+     0.03
+    ],
+    "roughness": 0.8
+   },
+   "scale": 1.0
+  },
+  "robot/cart/top_plate": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__cart__top_plate.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.16,
+     0.16,
+     0.18
+    ],
+    "roughness": 0.6
+   },
+   "scale": 1.0
+  },
+  "robot/cart/white_shell": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__cart__white_shell.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.9,
+     0.9,
+     0.88
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "robot/left_base": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_base__graphite.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.2,
+     0.2,
+     0.22
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/left_gripper": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_gripper__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link1": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_link1__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link2": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_link2__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link3": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_link3__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link4": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_link4__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link5": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_link5__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/left_tip_left": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_tip_left__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/left_tip_right": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__left_tip_right__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_base": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_base__graphite.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.2,
+     0.2,
+     0.22
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/right_gripper": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_gripper__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link1": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_link1__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link2": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_link2__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link3": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_link3__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link4": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_link4__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link5": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_link5__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_tip_left": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_tip_left__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_tip_right": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam__right_tip_right__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  }
+ },
+ "task": "Stand all 14 tiles in the rack facing the robot, sorted: characters, dots, bamboo, winds, dragons; numbers ascending left to right (robot's view).",
+ "hand_sorted": [
+  "1m",
+  "2m",
+  "3m",
+  "4p",
+  "5p",
+  "6p",
+  "7s",
+  "8s",
+  "9s",
+  "1z",
+  "1z",
+  "1z",
+  "7z",
+  "7z"
+ ],
+ "tiles": [
+  {
+   "name": "tile_00_4p",
+   "kind": "4p",
+   "label": "4 dots",
+   "start": "face up",
+   "target_slots": [
+    3
+   ]
+  },
+  {
+   "name": "tile_01_7z",
+   "kind": "7z",
+   "label": "Red dragon",
+   "start": "face down",
+   "target_slots": [
+    12,
+    13
+   ]
+  },
+  {
+   "name": "tile_02_9s",
+   "kind": "9s",
+   "label": "9 bamboo",
+   "start": "face up",
+   "target_slots": [
+    8
+   ]
+  },
+  {
+   "name": "tile_03_7s",
+   "kind": "7s",
+   "label": "7 bamboo",
+   "start": "face up",
+   "target_slots": [
+    6
+   ]
+  },
+  {
+   "name": "tile_04_8s",
+   "kind": "8s",
+   "label": "8 bamboo",
+   "start": "stacked, face down",
+   "target_slots": [
+    7
+   ]
+  },
+  {
+   "name": "tile_05_1m",
+   "kind": "1m",
+   "label": "1 characters",
+   "start": "face down",
+   "target_slots": [
+    0
+   ]
+  },
+  {
+   "name": "tile_06_5p",
+   "kind": "5p",
+   "label": "5 dots",
+   "start": "face up",
+   "target_slots": [
+    4
+   ]
+  },
+  {
+   "name": "tile_07_2m",
+   "kind": "2m",
+   "label": "2 characters",
+   "start": "face up",
+   "target_slots": [
+    1
+   ]
+  },
+  {
+   "name": "tile_08_7z",
+   "kind": "7z",
+   "label": "Red dragon",
+   "start": "face up",
+   "target_slots": [
+    12,
+    13
+   ]
+  },
+  {
+   "name": "tile_09_1z",
+   "kind": "1z",
+   "label": "East",
+   "start": "face down",
+   "target_slots": [
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "name": "tile_10_3m",
+   "kind": "3m",
+   "label": "3 characters",
+   "start": "face up",
+   "target_slots": [
+    2
+   ]
+  },
+  {
+   "name": "tile_11_6p",
+   "kind": "6p",
+   "label": "6 dots",
+   "start": "stacked, face up",
+   "target_slots": [
+    5
+   ]
+  },
+  {
+   "name": "tile_12_1z",
+   "kind": "1z",
+   "label": "East",
+   "start": "face down",
+   "target_slots": [
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "name": "tile_13_1z",
+   "kind": "1z",
+   "label": "East",
+   "start": "face up",
+   "target_slots": [
+    9,
+    10,
+    11
+   ]
+  }
+ ],
+ "demo_plan": [
+  {
+   "mode": "rack",
+   "arms": "left",
+   "tile": "tile_07_2m",
+   "slot": 1
+  },
+  {
+   "mode": "rack",
+   "arms": "right",
+   "tile": "tile_11_6p",
+   "slot": 5
+  },
+  {
+   "mode": "flip",
+   "arms": "left (stand up) + right (rack)",
+   "tile": "tile_01_7z",
+   "slot": 12
+  }
+ ],
+ "demo_end": {
+  "n_correct": 3,
+  "success": false
+ },
+ "events": [
+  {
+   "t": 0.6,
+   "msg": "left: pick tile_07_2m (heading -43 deg) for slot 1",
+   "pick": [
+    0.016,
+    -0.1197,
+    0.754
+   ]
+  },
+  {
+   "t": 3.778,
+   "msg": "left: grasp ok",
+   "width_mm": 25.4
+  },
+  {
+   "t": 4.978,
+   "msg": "left: transport tile_07_2m to slot 1",
+   "tcp_goal": [
+    -0.198,
+    0.0946,
+    0.7872
+   ]
+  },
+  {
+   "t": 9.528,
+   "msg": "left: tile error 8 mm above the seat",
+   "err_mm": [
+    0.03,
+    -0.46,
+    0.11
+   ],
+   "in_hand_slip_mm": 0.58
+  },
+  {
+   "t": 11.428,
+   "msg": "left: released tile_07_2m"
+  },
+  {
+   "t": 14.028,
+   "msg": "right: pick tile_11_6p (heading 10 deg) for slot 5",
+   "pick": [
+    0.2341,
+    -0.0899,
+    0.775
+   ]
+  },
+  {
+   "t": 17.204,
+   "msg": "right: grasp ok",
+   "width_mm": 25.7
+  },
+  {
+   "t": 18.404,
+   "msg": "right: transport tile_11_6p to slot 5",
+   "tcp_goal": [
+    -0.054,
+    0.0945,
+    0.7872
+   ]
+  },
+  {
+   "t": 22.954,
+   "msg": "right: tile error 8 mm above the seat",
+   "err_mm": [
+    -0.07,
+    -0.45,
+    0.09
+   ],
+   "in_hand_slip_mm": 0.55
+  },
+  {
+   "t": 24.854,
+   "msg": "right: released tile_11_6p"
+  },
+  {
+   "t": 27.454,
+   "msg": "left: pick face-down tile_01_7z (heading 3 deg) to stand it up",
+   "pick": [
+    -0.365,
+    -0.205,
+    0.7565
+   ]
+  },
+  {
+   "t": 30.83,
+   "msg": "left: grasp ok",
+   "width_mm": 25.6
+  },
+  {
+   "t": 32.03,
+   "msg": "left: turn tile_01_7z upright",
+   "tcp_goal": [
+    0.0039,
+    -0.1999,
+    0.7707
+   ]
+  },
+  {
+   "t": 36.33,
+   "msg": "left: tile error 8 mm above the table",
+   "err_mm": [
+    -0.36,
+    -0.01,
+    -0.09
+   ]
+  },
+  {
+   "t": 38.13,
+   "msg": "left: released tile_01_7z standing"
+  },
+  {
+   "t": 41.23,
+   "msg": "right: grip standing tile_01_7z from its face side",
+   "grasp": [
+    -0.0065,
+    -0.2,
+    0.7735
+   ],
+   "approach": [
+    -0.868,
+    -0.001,
+    -0.497
+   ]
+  },
+  {
+   "t": 44.806,
+   "msg": "right: grasp ok",
+   "width_mm": 25.7
+  },
+  {
+   "t": 46.006,
+   "msg": "right: transport tile_01_7z to slot 12",
+   "tcp_goal": [
+    0.1981,
+    0.0946,
+    0.7873
+   ]
+  },
+  {
+   "t": 50.956,
+   "msg": "right: tile error 8 mm above the seat",
+   "err_mm": [
+    -0.03,
+    -0.08,
+    0.26
+   ],
+   "in_hand_slip_mm": 0.24
+  },
+  {
+   "t": 52.856,
+   "msg": "right: released tile_01_7z"
+  }
+ ],
+ "notes": "All objects are free rigid bodies (Genesis rigid solver, gs.cpu, float64, dt 2 ms). Robot driven by IK + joint PD; tiles moved only by friction grasps. Rack is a free body resting on the table."
+}

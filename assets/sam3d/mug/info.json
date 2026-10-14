@@ -1,0 +1,89 @@
+{
+ "name": "mug",
+ "source_raw": "mug_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y, handle along +x",
+ "target": {
+  "dim": "height",
+  "size_m": 0.095,
+  "why": "standard 11-12 oz coffee mug, 9.5 cm tall (task spec)"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.07,
+ "yaw_applied_deg": -2.0,
+ "scale_from_sam3d_units": 0.12917,
+ "y_rescale": null,
+ "bbox_m": [
+  0.1292,
+  0.0925,
+  0.0951
+ ],
+ "visual_faces": 200000,
+ "visual_lo_faces": 40000,
+ "visual_watertight": false,
+ "visual_volume_m3": null,
+ "raw_faces": 723832,
+ "raw_watertight": true,
+ "collision": {
+  "file": "collision_hollow.obj",
+  "faces": 4000,
+  "watertight": true,
+  "volume_m3": 0.00010433245143505111,
+  "bbox_m": [
+   0.1288,
+   0.0923,
+   0.0946
+  ],
+  "wall_m": 0.003,
+  "voxel_m": 0.0007,
+  "mode": "respect",
+  "sam3d_cavity_frac_of_envelope": 0.803,
+  "floor_top_z_m": 0.0028,
+  "cavity_center_xy_m": [
+   -0.0189,
+   -0.0001
+  ],
+  "fill_level_z_m": 0.0952
+ },
+ "capacity_l": 0.421,
+ "source_image": {
+  "title": "Black coffee mug white table",
+  "creator": "",
+  "license": "CC0 1.0",
+  "page": "https://www.rawpixel.com/image/6038747/photo-image-public-domain-coffee-table",
+  "file": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJjdXBfbXVnX2NvZmZlZV90ZWFfMC1pbWFnZS1reWJkd2lpci5qcGc.jpg",
+  "provider": "rawpixel",
+  "local": "_src/ov/mug/full02.jpg"
+ },
+ "input_png": "_work/inputs/mug.png (mask: _work/inputs/mug_mask.png)",
+ "verdict": "very good",
+ "notes": "dark grey bistro mug, white glaze inside, open handle.",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.1292,
+   0.0925,
+   0.0952
+  ],
+  "visual_min_z_m": 0.0,
+  "visual_center_xy_m": [
+   -2e-05,
+   2e-05
+  ],
+  "collision_watertight": true,
+  "collision_winding_consistent": true,
+  "collision_volume_positive": true,
+  "collision_euler": 0,
+  "collision_body_count": 1,
+  "opening_ray_first_hit_z_m": 0.0028,
+  "opening_open": true,
+  "wall_thickness_mm_p5_p50": [
+   2.83,
+   4.02
+  ],
+  "collision_vs_visual_bbox_diff_mm": [
+   -0.4,
+   -0.1,
+   -0.6
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "station": "jars",
+ "fps": 30,
+ "n_frames": 61,
+ "objects": {
+  "jar_spice": {
+   "kind": "rigid",
+   "mesh": "meshes/spice_jar_vis.obj",
+   "material": {
+    "kind": "glass",
+    "color": [
+     0.94,
+     0.97,
+     0.98
+    ],
+    "roughness": 0.02
+   },
+   "scale": 1.0
+  },
+  "lid_spice": {
+   "kind": "rigid",
+   "mesh": "meshes/spice_lid_vis.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.78,
+     0.1,
+     0.08
+    ],
+    "roughness": 0.35
+   },
+   "scale": 1.0
+  },
+  "jar_jam": {
+   "kind": "rigid",
+   "mesh": "meshes/jam_jar_vis.obj",
+   "material": {
+    "kind": "glass",
+    "color": [
+     0.94,
+     0.97,
+     0.98
+    ],
+    "roughness": 0.02
+   },
+   "scale": 1.0
+  },
+  "lid_jam": {
+   "kind": "rigid",
+   "mesh": "meshes/jam_lid_vis.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.83,
+     0.66,
+     0.3
+    ],
+    "roughness": 0.25
+   },
+   "scale": 1.0
+  },
+  "jar_mason": {
+   "kind": "rigid",
+   "mesh": "meshes/mason_jar_vis.obj",
+   "material": {
+    "kind": "glass",
+    "color": [
+     0.94,
+     0.97,
+     0.98
+    ],
+    "roughness": 0.02
+   },
+   "scale": 1.0
+  },
+  "lid_mason": {
+   "kind": "rigid",
+   "mesh": "meshes/mason_lid_vis.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.74,
+     0.75,
+     0.77
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  }
+ },
+ "part": "settle",
+ "note": "puzzle layout settling under gravity, no drive",
+ "dt": 0.0033333333333333335,
+ "d_hat": 0.0002,
+ "frame_check_max_vertex_error_m": {
+  "jar_spice": 7.361971920971655e-08,
+  "lid_spice": 8.065718648531117e-10,
+  "jar_jam": 6.874571245596428e-08,
+  "lid_jam": 1.6307731831588512e-09,
+  "jar_mason": 1.1821598366879016e-07,
+  "lid_mason": 2.571329482670137e-09
+ },
+ "camera": {
+  "eye": [
+   0.3,
+   0.62,
+   1.0
+  ],
+  "target": [
+   0.0,
+   -0.07,
+   0.82
+  ],
+  "lens": 50
+ },
+ "table": {
+  "top": "white"
+ }
+}

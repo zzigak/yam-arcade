@@ -1,0 +1,51 @@
+{
+ "name": "mahjong_tile",
+ "source_raw": "mahjong_tile_s42.glb",
+ "seed": 42,
+ "frame": "Z-up, metres, base at z=0, bbox centred in x/y",
+ "target": {
+  "dim": "max",
+  "size_m": 0.03,
+  "why": "Chinese mahjong tile ~30 x 22 x 16 mm; largest dimension set to 30 mm"
+ },
+ "sam3d_to_zup": "(x,y,z)_gltf -> (x,-z,y)",
+ "upright_correction_deg": 0.03,
+ "yaw_applied_deg": 173.3,
+ "scale_from_sam3d_units": 0.02872,
+ "y_rescale": null,
+ "bbox_m": [
+  0.03,
+  0.0231,
+  0.0138
+ ],
+ "visual_faces": 199998,
+ "visual_lo_faces": 40000,
+ "visual_watertight": true,
+ "visual_volume_m3": 1.117361352925004e-06,
+ "raw_faces": 793724,
+ "raw_watertight": true,
+ "source_image": {
+  "title": "File:Mahjong Tiles (195606345).jpeg",
+  "creator": "Flickr user via Commons (see page)",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mahjong_Tiles_(195606345).jpeg",
+  "file": "https://upload.wikimedia.org/wikipedia/commons/1/16/Mahjong_Tiles_%28195606345%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "provider": "wikimedia",
+  "local": "_src/tile/03.jpg"
+ },
+ "input_png": "_work/inputs/mahjong_tile.png (mask: _work/inputs/mahjong_tile_mask.png)",
+ "verdict": "very good (reference)",
+ "notes": "one tile face up (+z) showing the 4-circles face, blue back layer at the bottom; long edge along x. Visual only (use a box collider).",
+ "checks": {
+  "visual_lo_bbox_m": [
+   0.03,
+   0.0231,
+   0.0138
+  ],
+  "visual_min_z_m": -0.0,
+  "visual_center_xy_m": [
+   0.0,
+   -0.0
+  ]
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "pitcher_brita": {
+  "src": "pitcher_a/00.png"
+ },
+ "pitcher_glass": {
+  "src": "ov/pitcher3/full05.jpg"
+ },
+ "urn": {
+  "src": "ov/urn/full05.jpg"
+ },
+ "mug": {
+  "src": "ov/mug/full02.jpg"
+ },
+ "mug_b": {
+  "src": "ov/mug/full14.jpg"
+ },
+ "tumbler": {
+  "src": "ov/tumbler2/full03.jpg",
+  "open": 2,
+  "exclude": [
+   [
+    0.685,
+    0.0,
+    1.0,
+    1.0
+   ]
+  ]
+ },
+ "tumbler_b": {
+  "src": "ov/tumbler/full12.jpg"
+ },
+ "teacup": {
+  "src": "ov/teacup/full15.jpg",
+  "box": [
+   0.0,
+   0.35,
+   0.468,
+   1.0
+  ],
+  "exclude": [
+   [
+    0.405,
+    0.0,
+    1.0,
+    0.52
+   ]
+  ]
+ },
+ "wineglass": {
+  "src": "ov/tumbler/full13.jpg"
+ },
+ "box": {
+  "src": "ov/box2/full00.jpg"
+ },
+ "jar": {
+  "src": "ov/jar2/full01.jpg",
+  "box": [
+   0.0,
+   0.05,
+   0.42,
+   0.9
+  ]
+ },
+ "jar_lid": {
+  "src": "ov/jar3/full08.jpg",
+  "box": [
+   0.58,
+   0.62,
+   1.0,
+   1.0
+  ]
+ },
+ "mahjong_tile": {
+  "src": "tile/03.jpg",
+  "box": [
+   0.6,
+   0.4,
+   0.86,
+   1.0
+  ]
+ },
+ "pitcher_brita2": {
+  "src": "pitcher_a/00.png",
+  "open": 3,
+  "exclude": [
+   [
+    0.735,
+    0.632,
+    0.81,
+    0.72
+   ]
+  ]
+ }
+}

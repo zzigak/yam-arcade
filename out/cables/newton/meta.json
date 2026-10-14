@@ -1,0 +1,792 @@
+{
+ "station": "cables",
+ "fps": 30,
+ "n_frames": 1960,
+ "objects": {
+  "bin_orange": {
+   "kind": "rigid",
+   "mesh": "meshes/bin.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.98,
+     0.83,
+     0.66
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "bin_orange_label": {
+   "kind": "rigid",
+   "mesh": "meshes/bin_label.obj",
+   "material": {
+    "kind": "paint",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.6
+   },
+   "scale": 1.0
+  },
+  "bin_blue": {
+   "kind": "rigid",
+   "mesh": "meshes/bin.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.72,
+     0.83,
+     0.96
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "bin_blue_label": {
+   "kind": "rigid",
+   "mesh": "meshes/bin_label.obj",
+   "material": {
+    "kind": "paint",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.6
+   },
+   "scale": 1.0
+  },
+  "power_coil": {
+   "kind": "rod",
+   "radius": 0.0045,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_power_coil/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_power_coil_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "hdmi_ubend": {
+   "kind": "rod",
+   "radius": 0.004,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_hdmi_ubend/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_hdmi_ubend_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "plug_hdmi_ubend/metal": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_hdmi_ubend_metal.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.72,
+     0.73,
+     0.75
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "ext_coil": {
+   "kind": "rod",
+   "radius": 0.0035,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_ext_coil/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_ext_coil_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "plug_ext_coil/metal": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_ext_coil_metal.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.72,
+     0.73,
+     0.75
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "cat6_scurve": {
+   "kind": "rod",
+   "radius": 0.003,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_cat6_scurve/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_cat6_scurve_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "plug_cat6_scurve/clear": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_cat6_scurve_clear.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.85,
+     0.87,
+     0.88
+    ],
+    "roughness": 0.2
+   },
+   "scale": 1.0
+  },
+  "barrel_arc": {
+   "kind": "rod",
+   "radius": 0.0025,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_barrel_arc/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_barrel_arc_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "plug_barrel_arc/metal": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_barrel_arc_metal.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.72,
+     0.73,
+     0.75
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "usbc_wave": {
+   "kind": "rod",
+   "radius": 0.002,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_usbc_wave/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_usbc_wave_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "plug_usbc_wave/metal": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_usbc_wave_metal.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.72,
+     0.73,
+     0.75
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "micro_scurve": {
+   "kind": "rod",
+   "radius": 0.002,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_micro_scurve/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_micro_scurve_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "plug_micro_scurve/metal": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_micro_scurve_metal.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.72,
+     0.73,
+     0.75
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "aux_loop": {
+   "kind": "rod",
+   "radius": 0.002,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_aux_loop/body": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_aux_loop_body.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "plug_aux_loop/metal": {
+   "kind": "rigid",
+   "mesh": "meshes/plug_aux_loop_metal.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.72,
+     0.73,
+     0.75
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/cart/aluminium": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__cart__aluminium.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.78,
+     0.79,
+     0.8
+    ],
+    "roughness": 0.35
+   },
+   "scale": 1.0
+  },
+  "robot/cart/camera": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__cart__camera.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.12,
+     0.12,
+     0.13
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "robot/cart/estop_red": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__cart__estop_red.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.8,
+     0.08,
+     0.06
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/cart/graphite": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__cart__graphite.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.2,
+     0.2,
+     0.22
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/cart/rubber": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__cart__rubber.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.03,
+     0.03,
+     0.03
+    ],
+    "roughness": 0.8
+   },
+   "scale": 1.0
+  },
+  "robot/cart/top_plate": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__cart__top_plate.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.16,
+     0.16,
+     0.18
+    ],
+    "roughness": 0.6
+   },
+   "scale": 1.0
+  },
+  "robot/cart/white_shell": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__cart__white_shell.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.9,
+     0.9,
+     0.88
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "robot/left_base": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_base__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_gripper": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_gripper__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link1": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_link1__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link2": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_link2__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link3": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_link3__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link4": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_link4__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link5": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_link5__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/left_tip_left": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_tip_left__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/left_tip_right": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__left_tip_right__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_base": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_base__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_gripper": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_gripper__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link1": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_link1__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link2": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_link2__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link3": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_link3__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link4": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_link4__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link5": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_link5__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_tip_left": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_tip_left__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_tip_right": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_yam_ultra__right_tip_right__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  }
+ },
+ "engine": "newton",
+ "solver": "SolverVBD 40 substeps x 3 iterations at 60 fps",
+ "camera": {
+  "eye": [
+   0.42,
+   -0.78,
+   1.18
+  ],
+  "target": [
+   0.0,
+   -0.06,
+   0.77
+  ],
+  "lens": 35.0
+ },
+ "cables": {
+  "power_coil": {
+   "color": "orange",
+   "EI": 0.004,
+   "length": 0.8573094369017268,
+   "plug": "IEC C13 socket"
+  },
+  "hdmi_ubend": {
+   "color": "blue",
+   "EI": 0.0025,
+   "length": 0.5981608433055791,
+   "plug": "HDMI type-A plug"
+  },
+  "ext_coil": {
+   "color": "blue",
+   "EI": 0.0012,
+   "length": 0.8947015661593248,
+   "plug": "Europlug (CEE 7/16)"
+  },
+  "cat6_scurve": {
+   "color": "orange",
+   "EI": 0.0005,
+   "length": 0.7326379225815373,
+   "plug": "RJ45 plug with boot"
+  },
+  "barrel_arc": {
+   "color": "blue",
+   "EI": 0.0001,
+   "length": 0.45535587180314147,
+   "plug": "DC barrel plug 5.5 x 2.1"
+  },
+  "usbc_wave": {
+   "color": "blue",
+   "EI": 4e-05,
+   "length": 0.501060627877578,
+   "plug": "USB-C plug"
+  },
+  "micro_scurve": {
+   "color": "orange",
+   "EI": 3e-05,
+   "length": 0.348773346802148,
+   "plug": "micro-USB plug"
+  },
+  "aux_loop": {
+   "color": "orange",
+   "EI": 2e-05,
+   "length": 0.5930253493749291,
+   "plug": "3.5 mm TRS jack plug"
+  }
+ }
+}

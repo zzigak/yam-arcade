@@ -1,0 +1,17 @@
+{
+ "reusable_assets": [
+  {
+   "logical_name": "mahjong_tile",
+   "mesh": "/home/ziga/projects/yam-arcade/assets/sam3d/mahjong_tile/visual_lo.obj",
+   "file_meshes_are_zup": true,
+   "simulation_role": "visual reference of one mahjong tile (use a box collider)",
+   "visual": "/home/ziga/projects/yam-arcade/assets/sam3d/mahjong_tile/visual.obj",
+   "bbox": [
+    0.03,
+    0.0231,
+    0.0138
+   ]
+  }
+ ],
+ "notes": "Meshes from SAM 3D (see ~/projects/yam-arcade/assets/sam3d/INDEX.md). Z-up, metres, base at z = 0."
+}

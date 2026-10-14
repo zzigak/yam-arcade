@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<robot name="tile_rack">
+  <link name="rack">
+    <inertial>
+      <origin xyz="0.000000 0.000852 0.010961" rpy="0 0 0"/>
+      <mass value="0.281911"/>
+      <inertia ixx="6.67830e-05" iyy="6.58263e-03" izz="6.61040e-03" ixy="-2.70447e-13" ixz="-1.49601e-13" iyz="-8.46651e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="rack.obj"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 -0.002847 0.010871" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.520000 0.035000 0.009500"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.000000 0.013040 0.018002" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.520000 0.008000 0.031500"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.216000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.180000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.144000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.108000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.072000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.036000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.000000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.036000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.072000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.108000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.144000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.180000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.216000 -0.004351 0.018779" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.003000 0.028000 0.007000"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.256000 -0.000776 0.018598" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.008000 0.035000 0.025500"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.256000 -0.000776 0.018598" rpy="-0.261799 0 0"/>
+      <geometry><box size="0.008000 0.035000 0.025500"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.000000 -0.003576 0.007750" rpy="0.000000 0 0"/>
+      <geometry><box size="0.520000 0.030807 0.007500"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.003000" rpy="0.000000 0 0"/>
+      <geometry><box size="0.524000 0.049960 0.006000"/></geometry>
+    </collision>
+  </link>
+</robot>

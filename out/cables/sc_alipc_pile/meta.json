@@ -1,0 +1,335 @@
+{
+ "station": "cables",
+ "fps": 30,
+ "n_frames": 121,
+ "objects": {
+  "power_coil": {
+   "kind": "rod",
+   "radius": 0.0045,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "hdmi_ubend": {
+   "kind": "rod",
+   "radius": 0.004,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "ext_coil": {
+   "kind": "rod",
+   "radius": 0.0035,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "cat6_scurve": {
+   "kind": "rod",
+   "radius": 0.003,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "barrel_arc": {
+   "kind": "rod",
+   "radius": 0.0025,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "usbc_wave": {
+   "kind": "rod",
+   "radius": 0.002,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.55
+   }
+  },
+  "micro_scurve": {
+   "kind": "rod",
+   "radius": 0.002,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "aux_loop": {
+   "kind": "rod",
+   "radius": 0.002,
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.55
+   }
+  },
+  "plug_power_coil": {
+   "kind": "rigid",
+   "mesh": "meshes/iec_c13_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.1,
+     0.1,
+     0.11
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "plug_hdmi_ubend": {
+   "kind": "rigid",
+   "mesh": "meshes/hdmi_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.1,
+     0.1,
+     0.11
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "plug_ext_coil": {
+   "kind": "rigid",
+   "mesh": "meshes/euro_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.92,
+     0.92,
+     0.9
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "plug_cat6_scurve": {
+   "kind": "rigid",
+   "mesh": "meshes/rj45_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.8,
+     0.82,
+     0.84
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "plug_barrel_arc": {
+   "kind": "rigid",
+   "mesh": "meshes/barrel_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.1,
+     0.1,
+     0.11
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "plug_usbc_wave": {
+   "kind": "rigid",
+   "mesh": "meshes/usbc_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.12,
+     0.12,
+     0.13
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "plug_micro_scurve": {
+   "kind": "rigid",
+   "mesh": "meshes/micro_usb_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.12,
+     0.12,
+     0.13
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "plug_aux_loop": {
+   "kind": "rigid",
+   "mesh": "meshes/jack35_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.12,
+     0.12,
+     0.13
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "bin_orange": {
+   "kind": "rigid",
+   "mesh": "meshes/bin_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.98,
+     0.83,
+     0.66
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "bin_orange_label": {
+   "kind": "rigid",
+   "mesh": "meshes/bin_label.obj",
+   "material": {
+    "kind": "paint",
+    "color": [
+     0.93,
+     0.45,
+     0.08
+    ],
+    "roughness": 0.6
+   },
+   "scale": 1.0
+  },
+  "bin_blue": {
+   "kind": "rigid",
+   "mesh": "meshes/bin_visual.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.72,
+     0.83,
+     0.96
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "bin_blue_label": {
+   "kind": "rigid",
+   "mesh": "meshes/bin_label.obj",
+   "material": {
+    "kind": "paint",
+    "color": [
+     0.11,
+     0.38,
+     0.8
+    ],
+    "roughness": 0.6
+   },
+   "scale": 1.0
+  }
+ },
+ "dt": 0.016666666666666666,
+ "camera": {
+  "eye": [
+   0.42,
+   -0.78,
+   1.18
+  ],
+  "target": [
+   0.0,
+   -0.06,
+   0.77
+  ],
+  "lens": 35.0
+ },
+ "cables": {
+  "power_coil": {
+   "color": "orange",
+   "EI": 0.004,
+   "length": 0.9073094369017267
+  },
+  "hdmi_ubend": {
+   "color": "blue",
+   "EI": 0.0025,
+   "length": 0.6341608433055791
+  },
+  "ext_coil": {
+   "color": "blue",
+   "EI": 0.0012,
+   "length": 0.934701566159325
+  },
+  "cat6_scurve": {
+   "color": "orange",
+   "EI": 0.0005,
+   "length": 0.7676379225815374
+  },
+  "barrel_arc": {
+   "color": "blue",
+   "EI": 0.0001,
+   "length": 0.47935587180314154
+  },
+  "usbc_wave": {
+   "color": "blue",
+   "EI": 4e-05,
+   "length": 0.5210606278775781
+  },
+  "micro_scurve": {
+   "color": "orange",
+   "EI": 3e-05,
+   "length": 0.3667733468021481
+  },
+  "aux_loop": {
+   "color": "orange",
+   "EI": 2e-05,
+   "length": 0.6190253493749289
+  }
+ }
+}

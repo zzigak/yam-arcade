@@ -1,0 +1,506 @@
+{
+ "station": "water",
+ "fps": 30,
+ "n_frames": 1482,
+ "objects": {
+  "pitcher": {
+   "kind": "rigid",
+   "mesh": "meshes/water_pitcher.obj",
+   "material": {
+    "kind": "glass",
+    "roughness": 0.05
+   },
+   "scale": 1.0
+  },
+  "pitcher_lid": {
+   "kind": "rigid",
+   "mesh": "meshes/water_pitcher_lid.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.95,
+     0.95,
+     0.94
+    ],
+    "roughness": 0.35
+   },
+   "scale": 1.0
+  },
+  "tumbler": {
+   "kind": "rigid",
+   "mesh": "meshes/water_tumbler_sam3d.glb",
+   "material": {
+    "kind": "glass",
+    "roughness": 0.02
+   },
+   "scale": 1.0
+  },
+  "mug": {
+   "kind": "rigid",
+   "mesh": "meshes/water_mug_sam3d.glb",
+   "material": {
+    "kind": "ceramic",
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "teacup": {
+   "kind": "rigid",
+   "mesh": "meshes/water_teacup_sam3d.glb",
+   "material": {
+    "kind": "ceramic",
+    "roughness": 0.15
+   },
+   "scale": 1.0
+  },
+  "water": {
+   "kind": "particles",
+   "radius": 0.0023022280614719386,
+   "material": {
+    "kind": "water",
+    "color": [
+     0.8,
+     0.9,
+     1.0
+    ]
+   }
+  },
+  "water_surface": {
+   "kind": "meshseq",
+   "material": {
+    "kind": "water",
+    "color": [
+     0.8,
+     0.9,
+     1.0
+    ]
+   },
+   "dir": "meshseq/water_surface"
+  },
+  "robot/cart/aluminium": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__cart__aluminium.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.78,
+     0.79,
+     0.8
+    ],
+    "roughness": 0.35
+   },
+   "scale": 1.0
+  },
+  "robot/cart/camera": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__cart__camera.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.12,
+     0.12,
+     0.13
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "robot/cart/estop_red": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__cart__estop_red.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.8,
+     0.08,
+     0.06
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/cart/graphite": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__cart__graphite.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.2,
+     0.2,
+     0.22
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/cart/rubber": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__cart__rubber.obj",
+   "material": {
+    "kind": "rubber",
+    "color": [
+     0.03,
+     0.03,
+     0.03
+    ],
+    "roughness": 0.8
+   },
+   "scale": 1.0
+  },
+  "robot/cart/top_plate": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__cart__top_plate.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.16,
+     0.16,
+     0.18
+    ],
+    "roughness": 0.6
+   },
+   "scale": 1.0
+  },
+  "robot/cart/white_shell": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__cart__white_shell.obj",
+   "material": {
+    "kind": "plastic",
+    "color": [
+     0.9,
+     0.9,
+     0.88
+    ],
+    "roughness": 0.5
+   },
+   "scale": 1.0
+  },
+  "robot/left_base": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_base__graphite.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.2,
+     0.2,
+     0.22
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/left_gripper": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_gripper__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link1": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_link1__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link2": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_link2__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link3": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_link3__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link4": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_link4__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/left_link5": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_link5__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/left_tip_left": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_tip_left__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/left_tip_right": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__left_tip_right__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_base": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_base__graphite.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.2,
+     0.2,
+     0.22
+    ],
+    "roughness": 0.4
+   },
+   "scale": 1.0
+  },
+  "robot/right_gripper": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_gripper__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link1": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_link1__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link2": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_link2__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link3": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_link3__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link4": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_link4__anodised_black.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.045,
+     0.045,
+     0.05
+    ],
+    "roughness": 0.45
+   },
+   "scale": 1.0
+  },
+  "robot/right_link5": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_link5__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_tip_left": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_tip_left__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  },
+  "robot/right_tip_right": {
+   "kind": "rigid",
+   "mesh": "meshes/yamcart_big_yam__right_tip_right__silver.obj",
+   "material": {
+    "kind": "metal",
+    "color": [
+     0.7,
+     0.71,
+     0.73
+    ],
+    "roughness": 0.3
+   },
+   "scale": 1.0
+  }
+ },
+ "mode": "robot",
+ "oracle": false,
+ "note": "Big YAM right arm grasps the pitcher handle and pours (IK + joint PD)",
+ "surface": {
+  "particle_radius": 0.0023022280614719386,
+  "smoothing_length": 2.0,
+  "cube_size": 0.75,
+  "iso_surface_threshold": 0.6,
+  "mesh_smoothing_iters": 25,
+  "mesh_smoothing_weights": true,
+  "mesh_cleanup": true,
+  "normals_smoothing_iters": 10
+ },
+ "events": [
+  [
+   5.453333333333238,
+   "travel:tumbler"
+  ],
+  [
+   8.303333333333004,
+   "tilt:tumbler:onset=44.0deg:pitcher=1200ml"
+  ],
+  [
+   9.803333333333239,
+   "pour:tumbler:target=386ml"
+  ],
+  [
+   14.753333333334012,
+   "untilt:tumbler:cup=324ml:air=20ml:rate=173ml/s:beta=68.3deg"
+  ],
+  [
+   16.960000000001024,
+   "travel:mug"
+  ],
+  [
+   19.81000000000147,
+   "tilt:mug:onset=54.0deg:pitcher=835ml"
+  ],
+  [
+   21.310000000001704,
+   "pour:mug:target=298ml"
+  ],
+  [
+   25.850000000002414,
+   "untilt:mug:cup=237ml:air=18ml:rate=173ml/s:beta=76.1deg"
+  ],
+  [
+   28.253333333336123,
+   "travel:teacup"
+  ],
+  [
+   31.10333333333657,
+   "tilt:teacup:onset=60.5deg:pitcher=556ml"
+  ],
+  [
+   32.60333333333616,
+   "pour:teacup:target=197ml"
+  ],
+  [
+   37.02333333333214,
+   "untilt:teacup:cup=150ml:air=13ml:rate=138ml/s:beta=82.2deg"
+  ],
+  [
+   39.57666666666315,
+   "return"
+  ],
+  [
+   43.62666666665947,
+   "placed"
+  ],
+  [
+   46.85666666665653,
+   "released"
+  ]
+ ]
+}

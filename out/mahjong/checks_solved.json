@@ -1,0 +1,259 @@
+{
+ "checks": {
+  "solved_success": {
+   "value": true,
+   "limit": "True (all 14 tiles seated in order)",
+   "ok": true
+  },
+  "solved_n_correct": {
+   "value": 14,
+   "limit": "== 14",
+   "ok": true
+  },
+  "solved_drift_1s_to_6s_mm": {
+   "value": 0.0010825312295026212,
+   "limit": "<= 0.05 (tiles leaning in the rack do not creep)",
+   "ok": true
+  },
+  "solved_rack_drift_mm": {
+   "value": 5.043443750759784e-10,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_max_speed_last_1s_mm_s": {
+   "value": 0.00021650627827878515,
+   "limit": "<= 0.1",
+   "ok": true
+  },
+  "solved_solver_penetration_mm": {
+   "value": 0.017178918863052124,
+   "limit": "<= 0.05 (t >= 1 s)",
+   "ok": true
+  },
+  "solved_solver_penetration_first_1s_mm": {
+   "value": 0.051632724778224226,
+   "limit": "<= 0.1 (landing from the spawn gap)",
+   "ok": true
+  },
+  "solved_box_overlap_tile-tile_mm": {
+   "value": -10.0,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_box_overlap_tile-table_mm": {
+   "value": -12.9582,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_box_overlap_tile-rack_mm": {
+   "value": 0.0206,
+   "limit": "<= 0.05",
+   "ok": true
+  },
+  "solved_box_overlap_rack-table_mm": {
+   "value": 0.0344,
+   "limit": "<= 0.05",
+   "ok": true
+  }
+ },
+ "info": {
+  "solved": {
+   "layout": "solved",
+   "drift_mm": 0.0010825312295026212,
+   "rot_deg": 0.0,
+   "rack_drift_mm": 5.043443750759784e-10,
+   "vmax_last1s_mm_s": 0.00021650627827878515,
+   "pen_max_mm": 0.017178918863052124,
+   "pen_first_1s_mm": 0.051632724778224226,
+   "disp_total_max_mm": 0.17419293935156602,
+   "overlaps_mm": {
+    "tile-tile": -10.0,
+    "tile-table": -12.9582,
+    "tile-rack": 0.0206,
+    "rack-table": 0.0344
+   },
+   "overlap_worst_pairs": {
+    "rack-table": [
+     "table",
+     "rack"
+    ],
+    "tile-table": [
+     "table",
+     "tile_00_1m"
+    ],
+    "tile-rack": [
+     "rack",
+     "tile_13_7z"
+    ],
+    "tile-tile": [
+     "tile_02_3m",
+     "tile_03_4p"
+    ]
+   },
+   "success": true,
+   "n_correct": 14,
+   "slots": [
+    {
+     "slot": 0,
+     "want": "1m",
+     "have": [
+      "1m"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 1,
+     "want": "2m",
+     "have": [
+      "2m"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 2,
+     "want": "3m",
+     "have": [
+      "3m"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 3,
+     "want": "4p",
+     "have": [
+      "4p"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 4,
+     "want": "5p",
+     "have": [
+      "5p"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 5,
+     "want": "6p",
+     "have": [
+      "6p"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 6,
+     "want": "7s",
+     "have": [
+      "7s"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 7,
+     "want": "8s",
+     "have": [
+      "8s"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 8,
+     "want": "9s",
+     "have": [
+      "9s"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 9,
+     "want": "1z",
+     "have": [
+      "1z"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 10,
+     "want": "1z",
+     "have": [
+      "1z"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 11,
+     "want": "1z",
+     "have": [
+      "1z"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 12,
+     "want": "7z",
+     "have": [
+      "7z"
+     ],
+     "ok": true
+    },
+    {
+     "slot": 13,
+     "want": "7z",
+     "have": [
+      "7z"
+     ],
+     "ok": true
+    }
+   ],
+   "tile_z": [
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906,
+    0.7825834238043906
+   ],
+   "tile_names": [
+    "tile_00_1m",
+    "tile_01_2m",
+    "tile_02_3m",
+    "tile_03_4p",
+    "tile_04_5p",
+    "tile_05_6p",
+    "tile_06_7s",
+    "tile_07_8s",
+    "tile_08_9s",
+    "tile_09_1z",
+    "tile_10_1z",
+    "tile_11_1z",
+    "tile_12_7z",
+    "tile_13_7z"
+   ],
+   "tile_notes": [
+    "slot 0",
+    "slot 1",
+    "slot 2",
+    "slot 3",
+    "slot 4",
+    "slot 5",
+    "slot 6",
+    "slot 7",
+    "slot 8",
+    "slot 9",
+    "slot 10",
+    "slot 11",
+    "slot 12",
+    "slot 13"
+   ]
+  }
+ }
+}
